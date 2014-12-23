@@ -13,6 +13,7 @@
 		855A4CA31A48995E00461CD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855A4CA21A48995E00461CD3 /* Images.xcassets */; };
 		855A4CA61A48995E00461CD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 855A4CA41A48995E00461CD3 /* LaunchScreen.xib */; };
 		855A4CB21A48995E00461CD3 /* My_First_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A4CB11A48995E00461CD3 /* My_First_AppTests.swift */; };
+		855FBAAB1A4A231C00438A98 /* img_gero-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 855FBAAA1A4A231C00438A98 /* img_gero-city.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		855A4CAB1A48995E00461CD3 /* My First AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My First AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855A4CB01A48995E00461CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		855A4CB11A48995E00461CD3 /* My_First_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_First_AppTests.swift; sourceTree = "<group>"; };
+		855FBAAA1A4A231C00438A98 /* img_gero-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img_gero-city.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				855A4C9B1A48995E00461CD3 /* AppDelegate.swift */,
+				855FBAA91A4A231C00438A98 /* Images */,
 				855A4C9D1A48995E00461CD3 /* ViewController.swift */,
 				855A4C9F1A48995E00461CD3 /* Main.storyboard */,
 				855A4CA21A48995E00461CD3 /* Images.xcassets */,
@@ -110,6 +113,14 @@
 				855A4CB01A48995E00461CD3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		855FBAA91A4A231C00438A98 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				855FBAAA1A4A231C00438A98 /* img_gero-city.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				855A4CA11A48995E00461CD3 /* Main.storyboard in Resources */,
 				855A4CA61A48995E00461CD3 /* LaunchScreen.xib in Resources */,
 				855A4CA31A48995E00461CD3 /* Images.xcassets in Resources */,
+				855FBAAB1A4A231C00438A98 /* img_gero-city.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +419,7 @@
 				855A4CB71A48995E00461CD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		855A4CB81A48995E00461CD3 /* Build configuration list for PBXNativeTarget "My First AppTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				855A4CBA1A48995E00461CD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
