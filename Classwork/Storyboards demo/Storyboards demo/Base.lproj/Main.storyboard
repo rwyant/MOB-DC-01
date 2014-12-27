@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rLh-0w-UOI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -25,7 +25,7 @@
                                     <rect key="frame" x="149" y="311" width="104" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="c69-UC-pX5" kind="show" id="vw3-f0-Z5W"/>
+                                    <segue destination="c69-UC-pX5" kind="show" id="dap-z5-iFA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOB Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzE-ts-zr3">
@@ -52,9 +52,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="06q-Vw-DgI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1161" y="304"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gZs-46-szx">
@@ -65,6 +67,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wX8-Ni-S0R"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ofd-NO-Mzo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnc-Oo-vBC">
@@ -73,31 +76,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="162" y="38" width="76" height="21"/>
+                                    <rect key="frame" x="162" y="101" width="76" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7D-Vn-gvR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eft-ip-7SR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Prev">
+                                <state key="normal" title="Bookmark">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="97" y="327" width="31" height="30"/>
+                                    <rect key="frame" x="165" y="518" width="71" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="m5C-xo-Db8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0a-w4-DT4">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="216" y="327" width="32" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="gHj-XI-jyQ" kind="show" id="mcy-wb-MLz"/>
+                                    <segue destination="m8W-gR-OYJ" kind="show" id="xE1-b5-YRp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -105,22 +96,29 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="rnc-Oo-vBC"/>
-                                <exclude reference="m7D-Vn-gvR"/>
-                                <exclude reference="o0a-w4-DT4"/>
+                                <exclude reference="eft-ip-7SR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="rnc-Oo-vBC"/>
-                                <include reference="m7D-Vn-gvR"/>
-                                <include reference="o0a-w4-DT4"/>
+                                <include reference="eft-ip-7SR"/>
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="EI5-kr-FOE">
+                        <barButtonItem key="rightBarButtonItem" title="Next Page" id="67W-BO-aln">
+                            <connections>
+                                <segue destination="gHj-XI-jyQ" kind="show" id="TxU-I1-giG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JTG-nv-tX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014" y="304"/>
+            <point key="canvasLocation" x="1971" y="304"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lle-rM-zcO">
@@ -131,6 +129,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qUO-D2-Mnc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QZR-2b-miX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ui-lK-Pxs">
@@ -139,19 +138,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="162" y="28" width="76" height="21"/>
+                                    <rect key="frame" x="162" y="102" width="76" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B1-fj-M8T">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJA-42-pDK">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Prev">
+                                <state key="normal" title="Bookmark">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="185" y="332" width="31" height="30"/>
+                                    <rect key="frame" x="165" y="518" width="71" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="c69-UC-pX5" kind="show" id="AWL-OF-18J"/>
+                                    <segue destination="m8W-gR-OYJ" kind="show" id="bKP-sg-aaL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,23 +158,175 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="9Ui-lK-Pxs"/>
-                                <exclude reference="8B1-fj-M8T"/>
+                                <exclude reference="OJA-42-pDK"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="9Ui-lK-Pxs"/>
-                                <include reference="8B1-fj-M8T"/>
+                                <include reference="OJA-42-pDK"/>
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ab4-Pe-a1b">
+                        <barButtonItem key="rightBarButtonItem" title="Next Page" id="W6k-0X-NhC">
+                            <connections>
+                                <segue destination="4eY-Ll-OFp" kind="show" id="leP-yJ-Hb6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Qq-dk-4ez" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723.5" y="304"/>
+            <point key="canvasLocation" x="2656.5" y="304"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Cg-gg-KH6">
+            <objects>
+                <viewController id="4eY-Ll-OFp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uyj-vB-Kjx"/>
+                        <viewControllerLayoutGuide type="bottom" id="BZp-1D-OKE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jDF-nc-Wwb">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXV-uA-34F">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="162" y="104" width="76" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hc2-XO-wLB">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Bookmark">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="165" y="512" width="71" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="m8W-gR-OYJ" kind="show" id="SZ0-BR-6mO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="QXV-uA-34F"/>
+                                <exclude reference="Hc2-XO-wLB"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="QXV-uA-34F"/>
+                                <include reference="Hc2-XO-wLB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="30U-GO-fD8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kV2-eK-hw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3328.5" y="304"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dX4-zM-6Zl">
+            <objects>
+                <viewController id="m8W-gR-OYJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WHm-oh-Qmv"/>
+                        <viewControllerLayoutGuide type="bottom" id="vzs-3n-1ad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="piM-af-uOB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bookmark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fd0-xx-hYq">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="161" y="100" width="79" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ES9-gr-9U4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Chapter 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="166" y="157" width="68" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4u-lB-6ve">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Chapter 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="166" y="240" width="68" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ed-Qh-UIy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Chapter 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="166" y="199" width="68" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Fd0-xx-hYq"/>
+                                <exclude reference="ES9-gr-9U4"/>
+                                <exclude reference="J4u-lB-6ve"/>
+                                <exclude reference="5ed-Qh-UIy"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Fd0-xx-hYq"/>
+                                <include reference="ES9-gr-9U4"/>
+                                <include reference="J4u-lB-6ve"/>
+                                <include reference="5ed-Qh-UIy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="gWA-3U-Dyt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONQ-ml-KnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2656.5" y="980"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zR5-2V-WMK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rLh-0w-UOI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tP6-pe-YqO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="1M7-3f-CdK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4g-sP-L9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984" y="965"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AWL-OF-18J"/>
+        <segue reference="SZ0-BR-6mO"/>
     </inferredMetricsTieBreakers>
 </document>
