@@ -30,7 +30,7 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Music" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Music" image="sample-1116-slayer-hand.png" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +62,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Player" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Player" image="sample-04-squiggle.png" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,7 +102,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="second" id="ZpD-qr-7Kf"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="sample-1013-hammer.png" id="ZpD-qr-7Kf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o35-jF-b8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,7 +130,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="sample-04-squiggle.png" width="32" height="16"/>
+        <image name="sample-1013-hammer.png" width="16" height="28"/>
+        <image name="sample-1116-slayer-hand.png" width="18" height="25"/>
     </resources>
 </document>
