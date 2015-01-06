@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85FD3D6D1A4F198000FCE434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD3D6C1A4F198000FCE434 /* AppDelegate.swift */; };
+		85FD3D6F1A4F198000FCE434 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD3D6E1A4F198000FCE434 /* ViewController.swift */; };
+		85FD3D721A4F198000FCE434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FD3D701A4F198000FCE434 /* Main.storyboard */; };
+		85FD3D741A4F198000FCE434 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FD3D731A4F198000FCE434 /* Images.xcassets */; };
+		85FD3D771A4F198000FCE434 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FD3D751A4F198000FCE434 /* LaunchScreen.xib */; };
+		85FD3D831A4F198000FCE434 /* Yapper_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD3D821A4F198000FCE434 /* Yapper_swiftTests.swift */; };
+		85FD3D8E1A4F19FC00FCE434 /* Login Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FD3D8D1A4F19FC00FCE434 /* Login Screen.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85FD3D7D1A4F198000FCE434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85FD3D5F1A4F198000FCE434 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85FD3D661A4F198000FCE434;
+			remoteInfo = Yapper_swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85FD3D671A4F198000FCE434 /* Yapper_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yapper_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FD3D6B1A4F198000FCE434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FD3D6C1A4F198000FCE434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85FD3D6E1A4F198000FCE434 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85FD3D711A4F198000FCE434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85FD3D731A4F198000FCE434 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85FD3D761A4F198000FCE434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		85FD3D7C1A4F198000FCE434 /* Yapper_swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Yapper_swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FD3D811A4F198000FCE434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FD3D821A4F198000FCE434 /* Yapper_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yapper_swiftTests.swift; sourceTree = "<group>"; };
+		85FD3D8D1A4F19FC00FCE434 /* Login Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login Screen.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85FD3D641A4F198000FCE434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FD3D791A4F198000FCE434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85FD3D5E1A4F198000FCE434 = {
+			isa = PBXGroup;
+			children = (
+				85FD3D691A4F198000FCE434 /* Yapper_swift */,
+				85FD3D7F1A4F198000FCE434 /* Yapper_swiftTests */,
+				85FD3D681A4F198000FCE434 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85FD3D681A4F198000FCE434 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85FD3D671A4F198000FCE434 /* Yapper_swift.app */,
+				85FD3D7C1A4F198000FCE434 /* Yapper_swiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85FD3D691A4F198000FCE434 /* Yapper_swift */ = {
+			isa = PBXGroup;
+			children = (
+				85FD3D8C1A4F19D600FCE434 /* Images */,
+				85FD3D6C1A4F198000FCE434 /* AppDelegate.swift */,
+				85FD3D6E1A4F198000FCE434 /* ViewController.swift */,
+				85FD3D701A4F198000FCE434 /* Main.storyboard */,
+				85FD3D731A4F198000FCE434 /* Images.xcassets */,
+				85FD3D751A4F198000FCE434 /* LaunchScreen.xib */,
+				85FD3D6A1A4F198000FCE434 /* Supporting Files */,
+			);
+			path = Yapper_swift;
+			sourceTree = "<group>";
+		};
+		85FD3D6A1A4F198000FCE434 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85FD3D6B1A4F198000FCE434 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85FD3D7F1A4F198000FCE434 /* Yapper_swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				85FD3D821A4F198000FCE434 /* Yapper_swiftTests.swift */,
+				85FD3D801A4F198000FCE434 /* Supporting Files */,
+			);
+			path = Yapper_swiftTests;
+			sourceTree = "<group>";
+		};
+		85FD3D801A4F198000FCE434 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85FD3D811A4F198000FCE434 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85FD3D8C1A4F19D600FCE434 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				85FD3D8D1A4F19FC00FCE434 /* Login Screen.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85FD3D661A4F198000FCE434 /* Yapper_swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FD3D861A4F198000FCE434 /* Build configuration list for PBXNativeTarget "Yapper_swift" */;
+			buildPhases = (
+				85FD3D631A4F198000FCE434 /* Sources */,
+				85FD3D641A4F198000FCE434 /* Frameworks */,
+				85FD3D651A4F198000FCE434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yapper_swift;
+			productName = Yapper_swift;
+			productReference = 85FD3D671A4F198000FCE434 /* Yapper_swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85FD3D7B1A4F198000FCE434 /* Yapper_swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FD3D891A4F198000FCE434 /* Build configuration list for PBXNativeTarget "Yapper_swiftTests" */;
+			buildPhases = (
+				85FD3D781A4F198000FCE434 /* Sources */,
+				85FD3D791A4F198000FCE434 /* Frameworks */,
+				85FD3D7A1A4F198000FCE434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85FD3D7E1A4F198000FCE434 /* PBXTargetDependency */,
+			);
+			name = Yapper_swiftTests;
+			productName = Yapper_swiftTests;
+			productReference = 85FD3D7C1A4F198000FCE434 /* Yapper_swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85FD3D5F1A4F198000FCE434 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Rob Wyant";
+				TargetAttributes = {
+					85FD3D661A4F198000FCE434 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					85FD3D7B1A4F198000FCE434 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 85FD3D661A4F198000FCE434;
+					};
+				};
+			};
+			buildConfigurationList = 85FD3D621A4F198000FCE434 /* Build configuration list for PBXProject "Yapper_swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85FD3D5E1A4F198000FCE434;
+			productRefGroup = 85FD3D681A4F198000FCE434 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85FD3D661A4F198000FCE434 /* Yapper_swift */,
+				85FD3D7B1A4F198000FCE434 /* Yapper_swiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85FD3D651A4F198000FCE434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FD3D8E1A4F19FC00FCE434 /* Login Screen.png in Resources */,
+				85FD3D721A4F198000FCE434 /* Main.storyboard in Resources */,
+				85FD3D771A4F198000FCE434 /* LaunchScreen.xib in Resources */,
+				85FD3D741A4F198000FCE434 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FD3D7A1A4F198000FCE434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85FD3D631A4F198000FCE434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FD3D6F1A4F198000FCE434 /* ViewController.swift in Sources */,
+				85FD3D6D1A4F198000FCE434 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FD3D781A4F198000FCE434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FD3D831A4F198000FCE434 /* Yapper_swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85FD3D7E1A4F198000FCE434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85FD3D661A4F198000FCE434 /* Yapper_swift */;
+			targetProxy = 85FD3D7D1A4F198000FCE434 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85FD3D701A4F198000FCE434 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85FD3D711A4F198000FCE434 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85FD3D751A4F198000FCE434 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85FD3D761A4F198000FCE434 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85FD3D841A4F198000FCE434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85FD3D851A4F198000FCE434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85FD3D871A4F198000FCE434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yapper_swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85FD3D881A4F198000FCE434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yapper_swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85FD3D8A1A4F198000FCE434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Yapper_swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yapper_swift.app/Yapper_swift";
+			};
+			name = Debug;
+		};
+		85FD3D8B1A4F198000FCE434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Yapper_swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yapper_swift.app/Yapper_swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85FD3D621A4F198000FCE434 /* Build configuration list for PBXProject "Yapper_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FD3D841A4F198000FCE434 /* Debug */,
+				85FD3D851A4F198000FCE434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FD3D861A4F198000FCE434 /* Build configuration list for PBXNativeTarget "Yapper_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FD3D871A4F198000FCE434 /* Debug */,
+				85FD3D881A4F198000FCE434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85FD3D891A4F198000FCE434 /* Build configuration list for PBXNativeTarget "Yapper_swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FD3D8A1A4F198000FCE434 /* Debug */,
+				85FD3D8B1A4F198000FCE434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85FD3D5F1A4F198000FCE434 /* Project object */;
+}
