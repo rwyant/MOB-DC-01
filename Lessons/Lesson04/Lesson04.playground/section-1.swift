@@ -3,8 +3,14 @@
 import Foundation
 
 // TODO: Create two variables, name and age. Name is a string, age is an integer.
+var name="Rob"
+var age=28
+
 
 // TODO: Print "Hello {whatever the value of name is}, you are {whatever the value of age is} years old!"
+var hello="Hello"
+
+
 
 // TODO: Print “You can drink” below the above text if the user is above 21. If they are above 18, print “you can vote”. If they are above 16, print “You can drive”
 
