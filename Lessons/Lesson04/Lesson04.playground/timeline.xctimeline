@@ -3,6 +3,7 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
+<<<<<<< HEAD
          documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=2302&amp;EndingColumnNumber=19&amp;EndingLineNumber=76&amp;StartingColumnNumber=5&amp;StartingLineNumber=76&amp;Timestamp=442213379.14423">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
@@ -61,6 +62,30 @@
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
          documentLocation = "#CharacterRangeLen=212&amp;CharacterRangeLoc=2671&amp;EndingColumnNumber=21&amp;EndingLineNumber=93&amp;StartingColumnNumber=5&amp;StartingLineNumber=93&amp;Timestamp=442257479.642045">
+=======
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=2281&amp;EndingColumnNumber=19&amp;EndingLineNumber=56&amp;StartingColumnNumber=5&amp;StartingLineNumber=56&amp;Timestamp=442349701.943403">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=2281&amp;EndingColumnNumber=33&amp;EndingLineNumber=56&amp;StartingColumnNumber=5&amp;StartingLineNumber=56&amp;Timestamp=442349701.943403">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=2281&amp;EndingColumnNumber=11&amp;EndingLineNumber=56&amp;StartingColumnNumber=5&amp;StartingLineNumber=56&amp;Timestamp=442349701.943403">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=2281&amp;EndingColumnNumber=32&amp;EndingLineNumber=56&amp;StartingColumnNumber=5&amp;StartingLineNumber=56&amp;Timestamp=442349701.943403">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=1&amp;CharacterRangeLoc=1746&amp;EndingColumnNumber=20&amp;EndingLineNumber=43&amp;StartingColumnNumber=5&amp;StartingLineNumber=43&amp;Timestamp=442349559.987379">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=1&amp;CharacterRangeLoc=1746&amp;EndingColumnNumber=40&amp;EndingLineNumber=43&amp;StartingColumnNumber=5&amp;StartingLineNumber=43&amp;Timestamp=442349559.987379">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=1721&amp;EndingColumnNumber=40&amp;EndingLineNumber=41&amp;StartingColumnNumber=5&amp;StartingLineNumber=41&amp;Timestamp=442349559.987379">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=20&amp;CharacterRangeLoc=2610&amp;EndingColumnNumber=29&amp;EndingLineNumber=64&amp;StartingColumnNumber=9&amp;StartingLineNumber=64&amp;Timestamp=442349856.809079">
+>>>>>>> ef9b2fbec5e0341793ca52bad8a368fb3cf34e8a
       </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
