@@ -86,6 +86,12 @@ for index in 1...35 {
 }
 println(three)
 
+//--OR---
+
+var fibNum = 9, current = 0, next = 1, result = 0
+for index2 in 0...fibNum {
+    
+}
 
 
 // TODO: Print out "Hello {whatever the value of name is}, your name is {however long the string name is} characters long!. Use countElements()
@@ -93,20 +99,24 @@ println("Hello \(name), your name is \(countElements(name)) characters long!")
 
 // TODO: Print the sum of one hundred random numbers. Use rand() to generate random numbers.
 
-var r = 1
+var r = random()
 var d = 0
 
 for rdw in 1...100 {
-    r = random()
-    d = d + r
+    d += r
 }
 
+//--OR--
 
-
+//var sum1 = 0
+//for i in 1...100 {
+//    sum1 += Int(rand())
+//}
+//println(sum1)
 
 // Bonus TO DO: Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
-var rdw = 1
-while rdw < 101 {
+var rdw = 0
+while rdw < 100 {
     if (rdw % 3 == 0) && (rdw % 5 == 0) {
         println("FizzBuzz")
     } else if (rdw % 3 == 0) {
@@ -121,7 +131,22 @@ while rdw < 101 {
 
 
 
-
-
+//----OR-----
+//
+//let fizz = 3
+//let buzz = 5
+//
+//for var i = 1; i <= 100; ++i {
+//    if (i % fizz == 0 && i % buzz == 0) {
+//        println("FizzBuzz")
+//    } else if (i % fizz == 0) {
+//        println("Fizz")
+//    } else if (i % buzz == 0) {
+//        println("Buzz")
+//    } else {
+//        println("Number \(i)")
+//    }
+//}
+//
 
 
