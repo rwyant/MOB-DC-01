@@ -1,4 +1,10 @@
 // Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+
+// Playground - noun: a place where people can play
 // Lesson 05
 
 // Complete these, in order, writing code under each TODO statement. Each statement calls for a function to be written, write each of them and then immediately call it after the function definition.
@@ -33,7 +39,7 @@ acceptString("Rob")
 
 // TODO: Write a function accepts a string optional. If the string optional exists, print "Hello {value of string}!". If it doesn't, print "Hello world!"
 func optional(x: String?) {
-        if let tempValue = x {
+    if let tempValue = x {
         println("Hello \(tempValue)")
     } else {
         println("Hello World")
@@ -73,7 +79,7 @@ func sumFib(sumNum: Int) {
         var tempNumber = fib(i)
         var tempNumber2 = 1
         tempNumber2 += tempNumber
-    }
+}
 
 
 
