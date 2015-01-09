@@ -5,25 +5,45 @@
 
 
 // TODO: Write a function that prints out "Hello world!" 10 times
-func helloWorld() {
-    var x = 1
-    while x <= 10 {
+//func helloWorld() {
+//    var x = 1
+//    while x <= 10 {
+//        println("Hello World")
+//        ++x
+//    }
+//}
+//helloWorld()
+//
+////---OR----
+func helloWorld2(numbTimesPrinted:Int) {
+    for index in 1...numbTimesPrinted {
         println("Hello World")
-        ++x
     }
 }
-helloWorld()
+
+helloWorld2(10)
 
 
-// TODO: Write a function that prints out "Hit this line {number of iterations of the loop} times!" 20 times
-func hitThisLine() {
-    var hit = 1
-    while hit < 21 {
-        println("Hit this line \(hit) times!")
-        ++hit
+//// TODO: Write a function that prints out "Hit this line {number of iterations of the loop} times!" 20 times
+//func hitThisLine() {
+//    var hit = 1
+//    while hit < 21 {
+//        println("Hit this line \(hit) times!")
+//        ++hit
+//    }
+//}
+//hitThisLine()
+
+//----OR-----
+func hitThisLine2(hit:Int) {
+    for index in 1...hit {
+    println("Hit this line \(index) times!")
     }
 }
-hitThisLine()
+
+hitThisLine2(20)
+
+
 
 // TODO: Write a function that accepts a string as a parameter. Print "Hello {value of string}!"
 func acceptString(name:String) {
@@ -65,10 +85,12 @@ var thirtySeventhNumber = fib(37)
 
 
 // TODO: Write a function that calls the above function in order to print the sum of the first 20 fibonacci numbers.
+
+
 var tempNumber2 = 0
 func sumFib (sumNum: Int) {
-    for i in 1...sumNum {
-        var tempNumber = fib(i)
+    for index in 1...sumNum {
+        var tempNumber = fib(index)
         tempNumber2 = tempNumber + tempNumber2
     }
     println(tempNumber2)
@@ -122,6 +144,20 @@ defineFib(20)
 
 
 // TODO: Write a function that takes in two numbers, a bill amount and an optional tip percentage (represented as a float, e.g. .2 = 20% tip). Return a tuple with the total bill amount and the tip amount (if included).
+func calculateBill (billAmount:Int, tip:Float?) -> (first:Int, Second:Float?) {
+    if let tempValue = tip {
+        println("The bill was \(billAmount) and the tip was \(tempValue).")
+    } else {
+        println("There's no tip entered.")
+    }
+    return (billAmount,tip)
+}
+
+calculateBill(100,0.18)
+
+
+
+
 
 
 
