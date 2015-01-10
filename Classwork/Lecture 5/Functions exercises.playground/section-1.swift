@@ -156,17 +156,70 @@ func calculateBill (billAmount:Int, tip:Float?) -> (first:Int, Second:Float?) {
 calculateBill(100,0.18)
 
 
-
-
-
-
-
 // TODO: Write a function that takes in a string and returns a string that is the reverse of the input. Append two strings using the + operator.
 
+func reverseString (myString:String) -> String {
+    var secondString = ""
+    secondString.extend(reverse(myString))
+    return secondString
+}
+println(reverseString("Rob"))
+
+
 // BONUS TODO: Write a function that takes in an array of strings and a search term string. Return a boolean indicating whether the search term string exists in the array.
+var shoppingList = ["bread","peanut butter","jelly"]
+func searchShoppingList (searchTerm:String) -> String {
+    var result = ""
+    if contains(shoppingList, searchTerm) {
+        result = "Yes, that item is in the Array!"
+    } else {
+        result = "No, sorry, that item is not in the Array."
+    }
+    return result
+}
+searchShoppingList("bread")
+searchShoppingList("cheese")
+
 
 // BONUS TODO: Write a function that accepts a string and returns a boolean indicating whether a string is a palindrome (reads the same backwards or forwards).
+func palindrome (testString:String) -> String {
+    var reverseTestString = ""
+    reverseTestString.extend(reverse(testString))
+    var result = ""
+    if (testString == reverseTestString) {
+        result = "The string is a palindrome."
+    } else {
+        result = "The string is not a palindrome."
+    }
+    return result
+    
+}
+palindrome("bob")
+palindrome("rob")
+
+
 
 // BONUS TODO: Write a function that takes in two strings and returns a boolean indicating whether the two strings
 
 // BONUS TODO: Write a function that accepts two parameters, a string and a function that accepts a string and returns a string. Print the result of passing the string into the function 10 times.
+
+func footballRoster (player:String) {
+    func playerName (firstName:String) -> String {
+        return firstName
+    }
+    for i in 1...10 {
+        println(playerName(player))
+    }
+}
+footballRoster("Peyton")
+
+
+
+
+
+
+
+
+
+
+
