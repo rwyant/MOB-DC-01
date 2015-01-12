@@ -41,32 +41,31 @@ func change (dollarAmount:Float) -> String {
     var nickleCount = 0
     var pennyCount = 0
     
-    for var i = 0; i < chng; ++i {
     if chng >= quarter {
         quarterCount = (chng / quarter)
         chng = chng - (quarterCount * quarter)
     } else {
-        println("Skip")
+        println("Skip Quarter")
         }
     if chng >= dime {
         dimeCount = (chng / dime)
         chng = chng - (dimeCount * dime)
     } else {
-        println("Skip")
+        println("Skip Dime")
         }
     if chng >= nickle {
         nickleCount = (chng / nickle)
         chng = chng - (nickleCount * nickle)
     } else {
-        println("Skip")
+        println("Skip Nickle")
         }
     if chng >= penny {
             pennyCount = (chng / penny)
             chng = chng - (pennyCount * penny)
     } else {
-        println("Skip")
+        println("Skip Penny")
         }
-}
+
 
 var result = ""
 result = ("Dollar = \(dollar), Q = \(quarterCount), D = \(dimeCount), N = \(nickleCount), P = \(pennyCount)")
@@ -74,6 +73,7 @@ result = ("Dollar = \(dollar), Q = \(quarterCount), D = \(dimeCount), N = \(nick
 }
 change(2.49)
 change(12.68)
+change(44.44)
 
 
 
