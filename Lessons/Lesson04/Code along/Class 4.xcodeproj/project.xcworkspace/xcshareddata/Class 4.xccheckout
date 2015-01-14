@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
-		<string>https://github.com/tedi/MOB-DC-01.git</string>
+		<string>https://github.com/rwyant/MOB-DC-01.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Classwork/Class 4/Class 4.xcodeproj</string>
+	<string>Lessons/Lesson04/Code along/Class 4.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
-		<string>../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/tedi/MOB-DC-01.git</string>
+	<string>https://github.com/rwyant/MOB-DC-01.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>10A52EA4FBADB6C746B5260032017E5923CCC696</string>
 			<key>IDESourceControlWCCName</key>
-			<string>MOB-DC-01</string>
+			<string>RobClone-MOB-DC-01</string>
 		</dict>
 	</array>
 </dict>

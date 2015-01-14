@@ -76,6 +76,46 @@ change(12.68)
 change(108.56)
 
 
+//If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+//Find the sum of all the multiples of 3 or 5 below 1000.
+
+var rdw: Int = 0
+var sum: Int = 0
+while rdw < 1000 {
+    if (rdw % 3 == 0) || (rdw % 5 == 0) {
+    sum = sum + rdw
+    ++rdw
+    } else {
+        ++rdw
+    }
+}
+println(sum)
+
+
+
+//By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+
+//    var fibNum = 0, current = 0, next = 1, resultt = 0
+//    for index in 0..<fibNum {
+//        let tempVar = current
+//        current = next
+//        next = tempVar + current
+//        resultt = tempVar
+//    }
+//
+//
+//fibNum = 37
+//println(resultt)
+
+
+
+
+
+
+
+
+
+
 
 
 // Variadic paremeters are an endless list of paremeters that can be passed inside a function. The data inside the function itself is greated as an array. Write a function that takes a paremeter describing whether to  multiply or add, and a variadic paremeter that represents all the numbers. Return either the sum or the multiplicaiton of the integerss.
