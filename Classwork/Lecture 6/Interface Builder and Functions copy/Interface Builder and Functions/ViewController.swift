@@ -79,7 +79,7 @@ class ViewController: UIViewController {
         var displayBill = "The total bill amount is $\(nameText1.text)."
         nameLabel.text = displayBill
         } else {
-        var displayBill = "The total bill amount is $\(nameText1.text).               An additional tip of \(nameText2.text)% would be $\(tipAmount)."
+        var displayBill = "The total bill amount is $\(nameText1.text).                       An additional tip of \(nameText2.text)% would be $\(tipAmount)."
         nameLabel.text = displayBill
         }
         

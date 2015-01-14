@@ -71,7 +71,7 @@ var result = ""
 result = ("Dollar = \(dollar), Q = \(quarterCount), D = \(dimeCount), N = \(nickleCount), P = \(pennyCount)")
     return result
 }
-change(2.49)
+change(2.45)
 change(12.68)
 change(108.56)
 
