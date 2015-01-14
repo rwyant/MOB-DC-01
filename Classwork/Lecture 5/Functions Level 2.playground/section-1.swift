@@ -73,7 +73,7 @@ result = ("Dollar = \(dollar), Q = \(quarterCount), D = \(dimeCount), N = \(nick
 }
 change(2.49)
 change(12.68)
-change(44.44)
+change(108.56)
 
 
 
