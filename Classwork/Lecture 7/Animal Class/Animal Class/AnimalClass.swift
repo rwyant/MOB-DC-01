@@ -12,9 +12,7 @@ class Animal {
     var species: String = ""
     var name: String = ""
     func stringRepresentation()-> String {
-        var strRep = ""
-        strRep = "The animal is a \(self.species), it's name is \(self.name)"
-        return strRep
+        return "The animal is a \(self.species), it's name is \(self.name)."
     }
     
 }
