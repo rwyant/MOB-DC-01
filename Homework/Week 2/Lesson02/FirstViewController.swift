@@ -7,13 +7,9 @@
 ////
 //
 import UIKit
-//
-//extension String {
-//    var floatValue: Float {
-//        return (self as NSString).floatValue
-//    }
-//}
-//
+
+
+
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var labelText: UILabel!
@@ -49,7 +45,7 @@ class FirstViewController: UIViewController {
 //        generateTextButton(sender: AnyObject) {
 //            
 //        func agePermission() -> String {
-//            var age = (ageText.text as NSString).floatValue
+//            var age = ageText.text.toInt()!
 //            var result = ""
 //            if (age >= 21) {
 //                result = "You can drink"
@@ -74,7 +70,7 @@ class FirstViewController: UIViewController {
 //     generateTextButton(sender: AnyObject)  {
 //        
 //        func agePermission2() -> String {
-//        var age = (ageText.text as NSString).floatValue
+//        var age = ageText.text.toInt()!
 //        var result = ""
 //        if (age >= 16 && age < 18) {
 //            result = "You can drive"
