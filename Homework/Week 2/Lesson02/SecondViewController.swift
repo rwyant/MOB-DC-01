@@ -18,6 +18,7 @@ class SecondViewController: UIViewController {
         var num = numText.text.toInt()!
         func sumOfNumb() -> String {
         sum += num
+            println("TODO Five: Success")
         return String(sum)
         }
         

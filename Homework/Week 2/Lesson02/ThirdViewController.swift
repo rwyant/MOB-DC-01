@@ -25,6 +25,7 @@ class ThirdViewController: UIViewController {
             } else {
                 result = "is not even"
             }
+            println("TODO Six: Success")
             return result
         }
         resultLabel.text = calc()

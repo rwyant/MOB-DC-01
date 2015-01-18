@@ -22,6 +22,7 @@ class FourthViewController: UIViewController {
         var myFibClass = FibonacciAdder()
         var result = myFibClass.fibonacciNumberAtIndex(fibNumb)
         fibLabel.text = String(result)
+        println("TODO Seven: Success")
     }
     
     
