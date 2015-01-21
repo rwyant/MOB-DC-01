@@ -8,6 +8,7 @@ import UIKit
 
 // Example:
 class ScoreKeeper {
+//    var oldValue = 0
     var score: Int = 0 {
         
         // newScore is a temporary variable that we have access to as we are setting it
@@ -42,9 +43,27 @@ scoreKeeper.score = 400
 
 class HealthKeeper {
     var health:Int = 100 {
-        
+        willSet(newHealth) {
+            println("About to set new health to \(newHealth)")
+        }
+        didSet {
+            if health >= oldValue + 100 {
+                println("You are in SUPER MODE!")
+            } else if health <= -100 {
+                println("You are mortal again.")
+            } else if health <= 0 {
+                println("You are dead.")
+            } else {
+                println("There are no conditions for your health, but I assume you're alive.")
+            }
+        }
     }
 }
+
+let healthKeeper = HealthKeeper()
+healthKeeper.health = 200
+healthKeeper.health = -20
+healthKeeper.health = -150
 
 
 // Prototype pattern: The prototype pattern is used to instantiate a new object by copying all of the properties of an existing object, creating an independent clone. This practise is particularly useful when the construction of a new object is inefficient.
@@ -81,13 +100,48 @@ john.name = "John"
 // - You have a prototype car that you can clone, however that prototype car also has modules for wheels (wheel type, wheel size).
 // - Create a class for each module 
 // - Instentiate 3 different car model per maker with defauls for each of those modules as the baseline. (ex: Toyota Corolla (prototype) has highway wheels, Toyota Supra has racing wheels, etc).
+class CarFactory {
+    var name: String?
+    var wheels:Int
+    var modules:String?
+    
+    init (wheels:Int) {
+        self.wheels = wheels
+    }
+    
+    func createHighwayCar() -> CarFactory {
+        return CarFactory(wheels:4)
+    }
+    
+    func createRaceCar() -> CarFactory {
+        return CarFactory(wheels:4)
+    }
+}
+
+let highwayCar = CarFactory(wheels: 4)
+let raceCar = CarFactory(wheels: 4)
+
+let toyotaHighwayCar = highwayCar.createHighwayCar()
+toyotaHighwayCar.name = "Toyota Corolla"
+let toyotaRaceCar = raceCar.createRaceCar()
+toyotaRaceCar.name = "Toyota Supra"
 
 
-// Singleton: the singleton pattern ensures that only one object of a particular class is ever created. All further references to objects of the singleton class refer to the same underlying instance. A great example of this is the app delegate that our applicaitons start with. Our apps are instances of App. 
-// Another example is the notification center. We only need one central notification center to control all of our broadcasted messages.
-// Final example: our database representation. Core Data gives us a single instance to communicate to our databases with.
-// Good post describing Singletons at a high level: http://assoc.tumblr.com/post/51302471844/the-misunderstood-singleton
 
+
+
+
+
+
+
+
+
+
+//// Singleton: the singleton pattern ensures that only one object of a particular class is ever created. All further references to objects of the singleton class refer to the same underlying instance. A great example of this is the app delegate that our applicaitons start with. Our apps are instances of App. 
+//// Another example is the notification center. We only need one central notification center to control all of our broadcasted messages.
+//// Final example: our database representation. Core Data gives us a single instance to communicate to our databases with.
+//// Good post describing Singletons at a high level: http://assoc.tumblr.com/post/51302471844/the-misunderstood-singleton
+//
 // Example:
 class SingletonClass {
     class var shared : SingletonClass {
@@ -101,5 +155,18 @@ class SingletonClass {
 }
 
 let instance = SingletonClass.shared
+//
+//// TO DO: Logging mechanism is a great example of a singleton usecase. Create a logging mechanism to log information and display information. Hint: this may require either the use of an array or dictionary, which we can't gone into great detail about.
 
-// TO DO: Logging mechanism is a great example of a singleton usecase. Create a logging mechanism to log information and display information. Hint: this may require either the use of an array or dictionary, which we can't gone into great detail about.
+
+
+
+
+
+
+
+
+
+
+
+
