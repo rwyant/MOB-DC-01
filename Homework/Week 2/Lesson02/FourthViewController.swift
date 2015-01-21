@@ -18,6 +18,7 @@ class FourthViewController: UIViewController {
     The first fibonacci number is 0, the second is 1, the third is 1, the fourth is two, the fifth is 3, the sixth is 5, etc. The Xth fibonacci number is the sum of the X-1th fibonacci number and the X-2th fibonacci number.*/
     
     @IBAction func fibButton(sender: AnyObject) {
+        // ****** One error here which is important to check for when calling toInt() (won't count this against you, just keep in mind for future reference). If user enters anything but a number in the text field the app crashes because you are unwrapping the optional without checking if it has a value or if it's nil. This is a great place to conditionall unwrap the age optional.
         var fibNumb:Int = fibNumText.text.toInt()!
         var myFibClass = FibonacciAdder()
         var result = myFibClass.fibonacciNumberAtIndex(fibNumb)
