@@ -34,7 +34,7 @@ class FirstViewController: UIViewController {
         
         /*TODO two: Connect the ‘name’ and ‘age’ text boxes to this class. Hook up the button to a NEW function (in addition to the function previously defined). That function must look at the string entered in the text box and print out “Hello {name}, you are {age} years old!”*/
         
-        
+        // **** I would approach this check by converting the ageText value toInt() and checking if the optional that comes back is nil or has value. Right now if our age textbox gets a letter as a value, it still runs the function. 
         func printText() -> String {
             var name: String = nameText.text
             var age: String = ageText.text
