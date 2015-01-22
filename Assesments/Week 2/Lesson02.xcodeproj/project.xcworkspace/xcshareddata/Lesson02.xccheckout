@@ -5,13 +5,21 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>45749536-EDEE-48DB-9B0C-DE6D2F1DC8F3</string>
+=======
+	<string>870DD889-30D6-4696-B3EC-B38480602380</string>
+>>>>>>> f0827ff8413ad9c9ca792b74bb0e36329c52e315
 	<key>IDESourceControlProjectName</key>
 	<string>Lesson02</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
+<<<<<<< HEAD
 		<string>https://github.com/rwyant/MOB-DC-01.git</string>
+=======
+		<string>github.com:ga-students/MOB-DC-01.git</string>
+>>>>>>> f0827ff8413ad9c9ca792b74bb0e36329c52e315
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Assesments/Week 2/Lesson02.xcodeproj</string>
@@ -21,7 +29,11 @@
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
+<<<<<<< HEAD
 	<string>https://github.com/rwyant/MOB-DC-01.git</string>
+=======
+	<string>github.com:ga-students/MOB-DC-01.git</string>
+>>>>>>> f0827ff8413ad9c9ca792b74bb0e36329c52e315
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +46,11 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>10A52EA4FBADB6C746B5260032017E5923CCC696</string>
 			<key>IDESourceControlWCCName</key>
+<<<<<<< HEAD
 			<string>RobClone-MOB-DC-01</string>
+=======
+			<string>MOB-DC-01</string>
+>>>>>>> f0827ff8413ad9c9ca792b74bb0e36329c52e315
 		</dict>
 	</array>
 </dict>
