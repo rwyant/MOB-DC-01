@@ -9,5 +9,10 @@
 import Foundation
 
 class Player {
-    
+    var name: String = ""
+    var hand: Int = 0
+    var money: Int = 500
+    init (hand: Int) {
+        self.hand = hand
+    }
 }

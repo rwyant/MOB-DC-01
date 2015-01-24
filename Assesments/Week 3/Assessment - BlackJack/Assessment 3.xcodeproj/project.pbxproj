@@ -16,6 +16,8 @@
 		7CD52BD21A72E21C00176059 /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD52BD11A72E21C00176059 /* CardGame.swift */; };
 		7CD52BD41A72E2C000176059 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD52BD31A72E2C000176059 /* Player.swift */; };
 		7CD52BD81A72E67F00176059 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD52BD71A72E67F00176059 /* SecondViewController.swift */; };
+		85EA07D71A734FF800BCAC65 /* blackJack_main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85EA07D61A734FF800BCAC65 /* blackJack_main.jpg */; };
+		85EA07DD1A73560500BCAC65 /* icon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EA07DC1A73560500BCAC65 /* icon72x72@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		7CD52BD11A72E21C00176059 /* CardGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardGame.swift; sourceTree = "<group>"; };
 		7CD52BD31A72E2C000176059 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7CD52BD71A72E67F00176059 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		853ED4BE1A73347C00330105 /* Assessment 3 Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Assessment 3 Playground.playground"; sourceTree = "<group>"; };
+		85EA07D61A734FF800BCAC65 /* blackJack_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackJack_main.jpg; sourceTree = "<group>"; };
+		85EA07DC1A73560500BCAC65 /* icon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon72x72@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,7 @@
 				7CD52BD11A72E21C00176059 /* CardGame.swift */,
 				7CD52BD31A72E2C000176059 /* Player.swift */,
 				7CD52BD71A72E67F00176059 /* SecondViewController.swift */,
+				853ED4BE1A73347C00330105 /* Assessment 3 Playground.playground */,
 			);
 			path = "Assessment 3";
 			sourceTree = "<group>";
@@ -99,6 +105,8 @@
 		7C86285E1A71F5C0004AAD02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				85EA07D61A734FF800BCAC65 /* blackJack_main.jpg */,
+				85EA07DC1A73560500BCAC65 /* icon72x72@2x.png */,
 				7C86285F1A71F5C0004AAD02 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -203,7 +211,9 @@
 			files = (
 				7C8628661A71F5C0004AAD02 /* Main.storyboard in Resources */,
 				7C86286B1A71F5C0004AAD02 /* LaunchScreen.xib in Resources */,
+				85EA07D71A734FF800BCAC65 /* blackJack_main.jpg in Resources */,
 				7C8628681A71F5C0004AAD02 /* Images.xcassets in Resources */,
+				85EA07DD1A73560500BCAC65 /* icon72x72@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
