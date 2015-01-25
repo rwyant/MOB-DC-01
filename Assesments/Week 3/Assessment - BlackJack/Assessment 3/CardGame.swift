@@ -38,6 +38,9 @@ class CardGame: BlackJack {
     func dealerHand() -> Int {
         var randomNumber = deal() + deal()
         var dealerHandTotal = Int(randomNumber)
+        while dealerHandTotal < 16 {
+            dealerHandTotal += deal()
+        }
         return dealerHandTotal
     }
     

@@ -19,7 +19,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMe-as-FDr">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="107" y="237" width="171" height="30"/>
                                 </variation>
@@ -184,7 +184,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="509" width="244" height="25"/>
+                                    <rect key="frame" x="38" y="509" width="244" height="25"/>
                                 </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBa-bq-sus">
@@ -217,6 +217,31 @@
                                     <action selector="startGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X2g-Le-Bdj"/>
                                 </connections>
                             </button>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ci8-us-Rvo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="314" width="237" height="100"/>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winner.png" translatesAutoresizingMaskIntoConstraints="NO" id="rUk-Y8-Xnj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="36" y="312" width="240" height="106"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loser.png" translatesAutoresizingMaskIntoConstraints="NO" id="glU-ya-YTw">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="36" y="313" width="240" height="106"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="push.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lg4-9n-SuL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="312" width="240" height="106"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -230,6 +255,10 @@
                                 <exclude reference="oBa-bq-sus"/>
                                 <exclude reference="BF0-KX-cBE"/>
                                 <exclude reference="eKo-x1-KrG"/>
+                                <exclude reference="Ci8-us-Rvo"/>
+                                <exclude reference="rUk-Y8-Xnj"/>
+                                <exclude reference="glU-ya-YTw"/>
+                                <exclude reference="Lg4-9n-SuL"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -243,16 +272,24 @@
                                 <include reference="oBa-bq-sus"/>
                                 <include reference="BF0-KX-cBE"/>
                                 <include reference="eKo-x1-KrG"/>
+                                <include reference="Ci8-us-Rvo"/>
+                                <include reference="rUk-Y8-Xnj"/>
+                                <include reference="glU-ya-YTw"/>
+                                <include reference="Lg4-9n-SuL"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="kye-4f-Ber"/>
                     <connections>
+                        <outlet property="hiddenBox" destination="Ci8-us-Rvo" id="B3x-0V-uIA"/>
+                        <outlet property="loserBox" destination="glU-ya-YTw" id="RmB-dH-SPI"/>
+                        <outlet property="pushBox" destination="Lg4-9n-SuL" id="WAo-PT-n6I"/>
                         <outlet property="redBox" destination="VLj-XE-fcY" id="Vv1-Uh-GQ7"/>
                         <outlet property="textView" destination="d7v-6p-V5m" id="Dzp-p4-ULb"/>
                         <outlet property="textView2" destination="GeY-yl-Fcf" id="V27-mD-LRh"/>
                         <outlet property="textView3" destination="L1M-PF-zdS" id="R78-KW-Dci"/>
                         <outlet property="textView4" destination="ktB-kI-0xe" id="fax-pI-Kyw"/>
+                        <outlet property="winnerBox" destination="rUk-Y8-Xnj" id="Icb-jS-8qg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -328,5 +365,8 @@
     </scenes>
     <resources>
         <image name="blackJack_main.jpg" width="642" height="310"/>
+        <image name="loser.png" width="778" height="369"/>
+        <image name="push.png" width="779" height="368"/>
+        <image name="winner.png" width="778" height="368"/>
     </resources>
 </document>
