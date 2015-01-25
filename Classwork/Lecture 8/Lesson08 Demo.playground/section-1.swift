@@ -46,6 +46,9 @@ class Penguin: Animal, Flight {
 }
 
 var penguinJoe = Penguin(hasClaws: true)
+penguinJoe.fur
+
+
 
 class Human: Animal, Talk {
     func speak() -> String {

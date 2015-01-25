@@ -18,7 +18,12 @@ protocol BlackJack {
 class CardGame: BlackJack {
     
     func deal() -> Int {
-        let randomNumber = arc4random_uniform(11) + 1
+        var randomNumber = arc4random_uniform(14) + 1
+        if randomNumber > 11 {
+            randomNumber = 10
+        } else {
+            
+        }
         var card = Int(randomNumber)
         return card
     }
@@ -31,7 +36,7 @@ class CardGame: BlackJack {
     }
     
     func dealerHand() -> Int {
-        let randomNumber = arc4random_uniform(10) + 12
+        var randomNumber = deal() + deal()
         var dealerHandTotal = Int(randomNumber)
         return dealerHandTotal
     }

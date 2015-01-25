@@ -54,10 +54,18 @@ var startGame = CardGame()
 startGame.player.name = "Rob"
 startGame.player.hand = startGame.firstHand()
 startGame.dealerHand()
+class Money {
+    var money = ""
+    var wallet = 0
+}
 
+var money = Money()
+money.wallet
 
+//class ViewController: UIViewController, Money {
+//    var wallet = wall
 
-class ViewController: UIViewController {
+    
 // BlackJack game: Create a a game of Blackjack
 // ************* Baseline requirements:
 // ** Set up Player class and CardGame class in their respective provided files. Follow the protocol rules for the CardGame class.
