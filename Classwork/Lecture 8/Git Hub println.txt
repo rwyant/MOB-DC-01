@@ -1,0 +1,360 @@
+Last login: Sun Jan 25 10:49:38 on ttys000
+Robs-MacBook-Air:~ RobWyant$ pwd
+/Users/RobWyant
+Robs-MacBook-Air:~ RobWyant$ cd Documents/
+Robs-MacBook-Air:Documents RobWyant$ cd terminal\ playground/
+Robs-MacBook-Air:terminal playground RobWyant$ cd Test2
+Robs-MacBook-Air:Test2 RobWyant$ git log
+commit 34b79aebd8886718f2b2d4f05e96eeeb2cb77dc6
+Author: Rob Wyant <rob@getyapper.com>
+Date:   Sun Jan 25 12:48:52 2015 -0500
+
+    Adding new file
+
+commit de8ce17d82765c3708b313e417da6a281d604a32
+Author: Rob Wyant <rob@getyapper.com>
+Date:   Sun Jan 25 12:02:01 2015 -0500
+
+    Committing Test2
+Robs-MacBook-Air:Test2 RobWyant$ git checkout master
+Already on 'master'
+Robs-MacBook-Air:Test2 RobWyant$ git checkout id
+error: pathspec 'id' did not match any file(s) known to git.
+Robs-MacBook-Air:Test2 RobWyant$ git checkout 34b79aebd8886718f2b2d4f05e96eeeb2cb77dc6
+Note: checking out '34b79aebd8886718f2b2d4f05e96eeeb2cb77dc6'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+HEAD is now at 34b79ae... Adding new file
+Robs-MacBook-Air:Test2 RobWyant$ git checkout master
+Switched to branch 'master'
+Robs-MacBook-Air:Test2 RobWyant$ cd /Users/RobWyant/GitHub/RobClone-MOB-DC-01 
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git remote
+origin
+upstream
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git pull upstream master
+From https://github.com/ga-students/MOB-DC-01
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git remote -v
+origin	https://github.com/rwyant/MOB-DC-01.git (fetch)
+origin	https://github.com/rwyant/MOB-DC-01.git (push)
+upstream	https://github.com/ga-students/MOB-DC-01.git (fetch)
+upstream	https://github.com/ga-students/MOB-DC-01.git (push)
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ echo "# TestRepo3" >> README.md
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git init
+Reinitialized existing Git repository in /Users/RobWyant/GitHub/RobClone-MOB-DC-01/.git/
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git add README.md
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git commit -m "first commit"
+[master f7997d4] first commit
+ 1 file changed, 1 insertion(+)
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git remote add origin https://github.com/rwyant/TestRepo3.git
+fatal: remote origin already exists.
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git push -u origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/rwyant/MOB-DC-01.git
+   b5f0ae6..f7997d4  master -> master
+Branch master set up to track remote branch master from origin.
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ mkdir Test3
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ mv README.md Test3/.
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ cd Test3/
+Robs-MacBook-Air:Test3 RobWyant$ ls
+README.md
+Robs-MacBook-Air:Test3 RobWyant$ open README.md 
+Robs-MacBook-Air:Test3 RobWyant$ touch newTextFile.txt
+Robs-MacBook-Air:Test3 RobWyant$ ls
+README.md	newTextFile.txt
+Robs-MacBook-Air:Test3 RobWyant$ open newTextFile.txt 
+Robs-MacBook-Air:Test3 RobWyant$ open newTextFile.txt 
+Robs-MacBook-Air:Test3 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:Test3 RobWyant$ git add newTextFile.txt 
+Robs-MacBook-Air:Test3 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   newTextFile.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+
+Robs-MacBook-Air:Test3 RobWyant$ git add README.md 
+Robs-MacBook-Air:Test3 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   README.md
+	new file:   newTextFile.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../README.md
+
+Robs-MacBook-Air:Test3 RobWyant$ git commit -m "Commit newTextFile"
+[master d8cf63d] Commit newTextFile
+ 2 files changed, 6 insertions(+)
+ create mode 100644 Test3/README.md
+ create mode 100644 Test3/newTextFile.txt
+Robs-MacBook-Air:Test3 RobWyant$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 373 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+To https://github.com/rwyant/MOB-DC-01.git
+   f7997d4..d8cf63d  master -> master
+Robs-MacBook-Air:Test3 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:Test3 RobWyant$ git remote add origin https://github.com/rwyant/TestRepo3.git
+fatal: remote origin already exists.
+Robs-MacBook-Air:Test3 RobWyant$ git push -u origin master
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+Robs-MacBook-Air:Test3 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:Test3 RobWyant$ ls
+README.md	newTextFile.txt
+Robs-MacBook-Air:Test3 RobWyant$ cd ..
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ ls
+Assesments		Lessons			Solutions
+Classwork		MOB Syllabus.pdf	Test3
+Homework		Resources
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git LOG
+fatal: cannot handle LOG as a builtin
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git log
+commit d8cf63d298a8d1e4867cd96690fcea4ef19bc63d
+Author: Rob Wyant <rob@getyapper.com>
+Date:   Sun Jan 25 13:29:51 2015 -0500
+
+    Commit newTextFile
+
+commit f7997d4c9fe9a7420c63430a9ab6fec5a77bef20
+Author: Rob Wyant <rob@getyapper.com>
+Date:   Sun Jan 25 13:25:34 2015 -0500
+
+    first commit
+
+commit b5f0ae60268e418c407997a5e35a394bfb672809
+Author: Rob Wyant <rob@getyapper.com>
+Date:   Sun Jan 25 05:18:36 2015 -0500
+
+    Updated Blackjack
+    --Added 'winner', 'loser', and 'push' boxes
+    --Added dealer's hand logic (keep hitting if under 16, end game if bust)
+    --Removed gesture recognizer (in my own way.. by covering it up with a hidde
+
+commit 7cb0ef800ceb63c5429dba4da4c63a806bb2f6ba
+Author: Rob Wyant <rob@getyapper.com>
+Date:   Sun Jan 25 04:03:14 2015 -0500
+
+    Updates on Blackjack
+    --Added IntroViewController
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git checkout d8cf63d298a8d1e4867cd96690fcea4ef19bc63d
+D	README.md
+Note: checking out 'd8cf63d298a8d1e4867cd96690fcea4ef19bc63d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+HEAD is now at d8cf63d... Commit newTextFile
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+HEAD detached at d8cf63d
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git checkout master
+D	README.md
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+	deleted:    Test3/README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git add .
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'README.md' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git commit -m "Committing changes"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+	deleted:    README.md
+
+no changes added to commit
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git commit -m "commit"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+	deleted:    README.md
+
+no changes added to commit
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git commit -am "commit"
+[master 5f65561] commit
+ 1 file changed, 5 deletions(-)
+ delete mode 100644 README.md
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+Robs-MacBook-Air:RobClone-MOB-DC-01 RobWyant$ 

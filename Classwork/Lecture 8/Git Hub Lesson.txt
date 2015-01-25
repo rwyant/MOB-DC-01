@@ -1,0 +1,52 @@
+pwd = lists local computer (present working directory)
+ls = lists files in current directory
+ls -a = pull up a list with hidden files
+ls -l = list view of all of our files with additional info
+ls -al = lists all files with additional info
+man [anything terminal] = pretty much a manual for everything command lines
+
+clear = clears page (really it just clears the view)
+[command] & K = actually clears everything
+[tab] = autocompletes project names (so you get file names correct!!!)
+cd ~ = takes you to local computer (home screen)
+[up button] = pressing 'up' button brings up a history of the commands you've used
+
+cd [folder name]
+cd .. = brings you to the home folder (or more specifically parent directory of the current directory)
+open . = pulls up a finder window of where we are
+open [file name] = opens the file in it's default location
+cd [drag and drop directory from finder] = go to that directory in terminal
+
+mkdir [name of directory] = create directory (or folder)
+touch [name of file] = create file
+rm [file name] = remove file
+rm -rf [directory name] = remove directory (recursively & forcefully)
+rm -rf * = removes EVERYTHING IN DIRECTORY (VERY DANGEROUS)
+vim [directory] = is like the command line for terminal (Large learning curve, prob will never use); :q quits vim
+
+//GitHub
+git status = give status, location, etc. of your location
+git init = initiate git to start watching this repo
+git add [file name] = add file to repository 
+git add . = all all files to repository
+git commit -m "Type in your messages here." = committing a modify
+git commit -am "Type in your messages here." = committing an Add or Delete
+git log = prints logs of recent commits
+git remote add origin = creating remote repository on local called "origin" (use URL from GitHub after you add new repo on github... mine was https://github.com/rwyant/TerminalPlaygroundFromLocalDemo.git)
+git remote -v = shows remote repos and permissions
+git push origin master = pushing "origin" to remote repo (master)
+
+git pull origin master = pulling from origin
+git checkout [ID] = get to a part of the history (if you do "git log", you will find the ID. Mine was 34b79aebd8886718f2b2d4f05e96eeeb2cb77dc6)
+git reset --hard [ID] = pretty much an 'undo', allows you to go back in time to a point in your 'git log' (reset master to that point in time)
+git checkout master = get back to master
+git pull upstream master = pulling from upstream
+git clone [URL] = creates a clone of that repository on your hard drive wherever you are in terminal
+
+cp -r folder1/hello.text folder2/. = copy files (recursively) from one repo (or folder) to another. The "." makes it so that you copy with the same file name.
+cp -r folder1/* folder2/. = copy all files in folder1 (with the same name) to folder2
+mv [file name] folder1/. = moves 'readme.txt' into folder1, keeping naming structure as it is 
+mv newfolder/ folder1/. = moves 'newfolder' folder into folder1, keeping the same name
+
+
+
