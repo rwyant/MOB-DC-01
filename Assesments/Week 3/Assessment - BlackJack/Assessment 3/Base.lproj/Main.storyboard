@@ -138,7 +138,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felt2.png" translatesAutoresizingMaskIntoConstraints="NO" id="zmJ-8U-siC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felt.png" translatesAutoresizingMaskIntoConstraints="NO" id="zmJ-8U-siC">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="-1" y="29" width="323" height="540"/>
@@ -157,7 +157,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="33" y="139" width="97" height="30"/>
+                                    <rect key="frame" x="33" y="139" width="129" height="30"/>
                                 </variation>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="dG6-8q-40z" userLabel="player1">
@@ -418,6 +418,6 @@
     <resources>
         <image name="back.png" width="71" height="96"/>
         <image name="blackJack_main.jpg" width="642" height="310"/>
-        <image name="felt2.png" width="480" height="719"/>
+        <image name="felt.png" width="480" height="719"/>
     </resources>
 </document>
