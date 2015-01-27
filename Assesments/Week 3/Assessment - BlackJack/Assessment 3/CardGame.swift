@@ -34,6 +34,10 @@ class CardGame: BlackJack {
         var hand = firstCard + secondCard
         return hand
     }
+    func card() -> Int {
+        var firstCard = deal()
+        return firstCard
+    }
     
     func dealerHand() -> Int {
         var firstCard = deal()

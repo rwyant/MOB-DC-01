@@ -17,6 +17,9 @@
 		7CD52BD41A72E2C000176059 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD52BD31A72E2C000176059 /* Player.swift */; };
 		7CD52BD81A72E67F00176059 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD52BD71A72E67F00176059 /* SecondViewController.swift */; };
 		855F22481A7454F00017260A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855F22471A7454F00017260A /* IntroViewController.swift */; };
+		859B1C331A775E3C0047605D /* felt3b.png in Resources */ = {isa = PBXBuildFile; fileRef = 859B1C311A775E3C0047605D /* felt3b.png */; };
+		859B1C341A775E3C0047605D /* felt3c.png in Resources */ = {isa = PBXBuildFile; fileRef = 859B1C321A775E3C0047605D /* felt3c.png */; };
+		859B1C361A7760E10047605D /* felt3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 859B1C351A7760E10047605D /* felt3d.png */; };
 		85C353AB1A745B460004B69C /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C353AA1A745B460004B69C /* Money.swift */; };
 		85D607181A76D84200EEDBA9 /* blackJack_main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85D607031A76D84200EEDBA9 /* blackJack_main.jpg */; };
 		85D607191A76D84200EEDBA9 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D607051A76D84200EEDBA9 /* 1.png */; };
@@ -71,6 +74,9 @@
 		7CD52BD71A72E67F00176059 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		853ED4BE1A73347C00330105 /* Assessment 3 Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Assessment 3 Playground.playground"; sourceTree = "<group>"; };
 		855F22471A7454F00017260A /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		859B1C311A775E3C0047605D /* felt3b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt3b.png; sourceTree = "<group>"; };
+		859B1C321A775E3C0047605D /* felt3c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt3c.png; sourceTree = "<group>"; };
+		859B1C351A7760E10047605D /* felt3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt3d.png; sourceTree = "<group>"; };
 		85C353AA1A745B460004B69C /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		85D607031A76D84200EEDBA9 /* blackJack_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackJack_main.jpg; sourceTree = "<group>"; };
 		85D607051A76D84200EEDBA9 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -187,6 +193,9 @@
 				85D607041A76D84200EEDBA9 /* Cards */,
 				85D607141A76D84200EEDBA9 /* icon72x72@2x.png */,
 				85D6072E1A76DF5700EEDBA9 /* felt2.png */,
+				859B1C311A775E3C0047605D /* felt3b.png */,
+				859B1C321A775E3C0047605D /* felt3c.png */,
+				859B1C351A7760E10047605D /* felt3d.png */,
 				85D607301A76E1C500EEDBA9 /* felt3.png */,
 				85D607341A76FFC700EEDBA9 /* felt5.png */,
 				85D607321A76EE9700EEDBA9 /* felt4.png */,
@@ -301,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85D6071F1A76D84200EEDBA9 /* 2.png in Resources */,
+				859B1C331A775E3C0047605D /* felt3b.png in Resources */,
 				85D607291A76D84200EEDBA9 /* loser.png in Resources */,
 				85D6071E1A76D84200EEDBA9 /* 14.png in Resources */,
 				85D6072A1A76D84200EEDBA9 /* push.png in Resources */,
@@ -315,12 +325,14 @@
 				85D607251A76D84200EEDBA9 /* 8.png in Resources */,
 				7C8628681A71F5C0004AAD02 /* Images.xcassets in Resources */,
 				85D6072D1A76DC2300EEDBA9 /* felt.png in Resources */,
+				859B1C361A7760E10047605D /* felt3d.png in Resources */,
 				85D607231A76D84200EEDBA9 /* 6.png in Resources */,
 				85D607271A76D84200EEDBA9 /* back.png in Resources */,
 				85D6071C1A76D84200EEDBA9 /* 12.png in Resources */,
 				85D607181A76D84200EEDBA9 /* blackJack_main.jpg in Resources */,
 				85D607221A76D84200EEDBA9 /* 5.png in Resources */,
 				85D607351A76FFC700EEDBA9 /* felt5.png in Resources */,
+				859B1C341A775E3C0047605D /* felt3c.png in Resources */,
 				85D607311A76E1C500EEDBA9 /* felt3.png in Resources */,
 				85D607331A76EE9700EEDBA9 /* felt4.png in Resources */,
 				85D6071B1A76D84200EEDBA9 /* 11.png in Resources */,
