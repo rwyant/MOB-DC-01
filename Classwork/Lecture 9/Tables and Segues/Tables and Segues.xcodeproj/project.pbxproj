@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85C353771A77253300EE4EE4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C353761A77253300EE4EE4 /* FourthViewController.swift */; };
 		85C39E5F1A770BE0005FF4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C39E5E1A770BE0005FF4DF /* AppDelegate.swift */; };
 		85C39E611A770BE0005FF4DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C39E601A770BE0005FF4DF /* ViewController.swift */; };
 		85C39E641A770BE0005FF4DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C39E621A770BE0005FF4DF /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85C353761A77253300EE4EE4 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		85C39E591A770BE0005FF4DF /* Tables and Segues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tables and Segues.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C39E5D1A770BE0005FF4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85C39E5E1A770BE0005FF4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				85C39E5C1A770BE0005FF4DF /* Supporting Files */,
 				85C39E801A771A93005FF4DF /* SecondViewController.swift */,
 				85C39E821A771AE8005FF4DF /* ThirdViewController.swift */,
+				85C353761A77253300EE4EE4 /* FourthViewController.swift */,
 			);
 			path = "Tables and Segues";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				85C39E611A770BE0005FF4DF /* ViewController.swift in Sources */,
 				85C39E831A771AE8005FF4DF /* ThirdViewController.swift in Sources */,
 				85C39E5F1A770BE0005FF4DF /* AppDelegate.swift in Sources */,
+				85C353771A77253300EE4EE4 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +417,7 @@
 				85C39E7A1A770BE0005FF4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85C39E7B1A770BE0005FF4DF /* Build configuration list for PBXNativeTarget "Tables and SeguesTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				85C39E7D1A770BE0005FF4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

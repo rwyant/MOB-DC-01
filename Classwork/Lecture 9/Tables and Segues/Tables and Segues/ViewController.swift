@@ -46,12 +46,13 @@ class ViewController: UIViewController {
     }
     
     func swipedRight (sender:UISwipeGestureRecognizer) {
+        self.performSegueWithIdentifier("showSecondVC", sender: self)
 //        self.resultsLabel.text = "You swiped right"
 //        UIView.animateWithDuration(1.0, animations: {
 //            self.swipeView.backgroundColor = UIColor.redColor()
 //        })
-        var secondVC = self.storyboard?.instantiateViewControllerWithIdentifier("SecondVC") as SecondViewController
-        self.presentViewController(secondVC,animated:true,completion:nil)
+//        var secondVC = self.storyboard?.instantiateViewControllerWithIdentifier("SecondVC") as SecondViewController
+//        self.presentViewController(secondVC,animated:true,completion:nil)
     }
     
     override func didReceiveMemoryWarning() {

@@ -11,8 +11,7 @@ import UIKit
 class ThirdViewController: UIViewController {
 
     @IBAction func back(sender: UIButton) {
-        var firstVC = self.storyboard?.instantiateViewControllerWithIdentifier("FirstVC") as ViewController
-        self.presentViewController(firstVC,animated:true,completion:nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func viewDidLoad() {

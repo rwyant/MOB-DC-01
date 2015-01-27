@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FourthViewController.swift
 //  Tables and Segues
 //
 //  Created by Rob Wyant on 1/26/15.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-    @IBAction func back(sender: UIButton) {
-       self.performSegueWithIdentifier("showFourthVC", sender: self)
-    }    
+class FourthViewController: UIViewController {
+
+    @IBAction func goHome(sender: UIButton) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

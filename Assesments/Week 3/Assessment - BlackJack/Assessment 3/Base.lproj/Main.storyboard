@@ -209,6 +209,24 @@
                                     <rect key="frame" x="140" y="309" width="59" height="80"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kYD-LF-8QB" userLabel="player3">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="163" y="309" width="59" height="80"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yxe-Gv-aZ5" userLabel="player4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="186" y="309" width="59" height="80"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YYj-KR-5qa" userLabel="player5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="210" y="309" width="59" height="80"/>
+                                </variation>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="1P6-14-BJD" userLabel="dealer1">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -281,24 +299,6 @@
                                     <outletCollection property="gestureRecognizers" destination="Otd-Ue-zas" appends="YES" id="ufN-IJ-pQJ"/>
                                 </connections>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kYD-LF-8QB" userLabel="player3">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="163" y="309" width="59" height="80"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yxe-Gv-aZ5" userLabel="player4">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="186" y="309" width="59" height="80"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YYj-KR-5qa" userLabel="player5">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="210" y="309" width="59" height="80"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -313,6 +313,9 @@
                                 <exclude reference="rjv-Q3-W1R"/>
                                 <exclude reference="dG6-8q-40z"/>
                                 <exclude reference="FQb-Th-r3J"/>
+                                <exclude reference="kYD-LF-8QB"/>
+                                <exclude reference="Yxe-Gv-aZ5"/>
+                                <exclude reference="YYj-KR-5qa"/>
                                 <exclude reference="1P6-14-BJD"/>
                                 <exclude reference="TmJ-IL-dT7"/>
                                 <exclude reference="Mjj-k9-ahZ"/>
@@ -321,9 +324,6 @@
                                 <exclude reference="XXc-q6-jgH"/>
                                 <exclude reference="I92-35-5ik"/>
                                 <exclude reference="nru-RS-QfV"/>
-                                <exclude reference="kYD-LF-8QB"/>
-                                <exclude reference="Yxe-Gv-aZ5"/>
-                                <exclude reference="YYj-KR-5qa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -338,6 +338,9 @@
                                 <include reference="rjv-Q3-W1R"/>
                                 <include reference="dG6-8q-40z"/>
                                 <include reference="FQb-Th-r3J"/>
+                                <include reference="kYD-LF-8QB"/>
+                                <include reference="Yxe-Gv-aZ5"/>
+                                <include reference="YYj-KR-5qa"/>
                                 <include reference="1P6-14-BJD"/>
                                 <include reference="TmJ-IL-dT7"/>
                                 <include reference="Mjj-k9-ahZ"/>
@@ -346,9 +349,6 @@
                                 <include reference="XXc-q6-jgH"/>
                                 <include reference="I92-35-5ik"/>
                                 <include reference="nru-RS-QfV"/>
-                                <include reference="kYD-LF-8QB"/>
-                                <include reference="Yxe-Gv-aZ5"/>
-                                <include reference="YYj-KR-5qa"/>
                             </mask>
                         </variation>
                     </view>
@@ -364,6 +364,9 @@
                         <outlet property="cardD2" destination="TmJ-IL-dT7" id="3I6-TV-VcZ"/>
                         <outlet property="cardP1" destination="dG6-8q-40z" id="zkp-ka-D7Y"/>
                         <outlet property="cardP2" destination="FQb-Th-r3J" id="zuo-g0-dZb"/>
+                        <outlet property="cardP3" destination="kYD-LF-8QB" id="fDd-jh-sTa"/>
+                        <outlet property="cardP4" destination="Yxe-Gv-aZ5" id="rG2-cB-MXo"/>
+                        <outlet property="cardP5" destination="YYj-KR-5qa" id="rb8-yc-nQe"/>
                         <outlet property="clearBet" destination="nru-RS-QfV" id="NNi-gX-vqY"/>
                         <outlet property="dealerText" destination="iNB-1F-Xld" id="rUz-lB-UkQ"/>
                         <outlet property="felt" destination="zmJ-8U-siC" id="T4d-ZF-tCL"/>

@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var walletText: UITextField!
     @IBOutlet weak var cardP1: UIImageView!
     @IBOutlet weak var cardP2: UIImageView!
+    @IBOutlet weak var cardP3: UIImageView!
+    @IBOutlet weak var cardP4: UIImageView!
+    @IBOutlet weak var cardP5: UIImageView!
     @IBOutlet weak var cardD1: UIImageView!
     @IBOutlet weak var cardD2: UIImageView!
     @IBOutlet weak var dealerText: UILabel!
@@ -48,6 +51,12 @@ class ViewController: UIViewController {
         self.cardP1.userInteractionEnabled = false
         self.cardP2.hidden = boolValue
         self.cardP2.userInteractionEnabled = false
+        self.cardP3.hidden = boolValue
+        self.cardP3.userInteractionEnabled = false
+        self.cardP4.hidden = boolValue
+        self.cardP4.userInteractionEnabled = false
+        self.cardP5.hidden = boolValue
+        self.cardP5.userInteractionEnabled = false
         self.dealerText.hidden = boolValue
         self.dealerText.userInteractionEnabled = false
         self.table.hidden = boolValue
