@@ -17,10 +17,43 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
+        initiateRightSwipeOnRedBox()
+        initiateDoubleTapOnRedBox()
     }
 
+    func initiateDoubleTapOnRedBox(){
+        let doubleTap = UITapGestureRecognizer(target:self,action:"doubleTapped:")
+        doubleTap.numberOfTapsRequired = 2
+        self.swipeView.addGestureRecognizer(doubleTap)
+    }
+    
+    func doubleTapped (sender:UITapGestureRecognizer) {
+//        UIView.animateWithDuration(1.0,animations: {
+//            self.swipeView.backgroundColor = UIColor.blueColor()
+//            })
+//        self.resultsLabel.text = "You double tapped"
+        var thirdVC = self.storyboard?.instantiateViewControllerWithIdentifier("ThirdVC") as ThirdViewController
+        
+        self.presentViewController(thirdVC,animated:true,completion:nil)
+    }
+    
+    func initiateRightSwipeOnRedBox(){
+        let swipeRight = UISwipeGestureRecognizer(target:self,action:"swipedRight:")
+        swipeRight.numberOfTouchesRequired = 2
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        
+        self.swipeView.addGestureRecognizer(swipeRight)
+    }
+    
+    func swipedRight (sender:UISwipeGestureRecognizer) {
+//        self.resultsLabel.text = "You swiped right"
+//        UIView.animateWithDuration(1.0, animations: {
+//            self.swipeView.backgroundColor = UIColor.redColor()
+//        })
+        var secondVC = self.storyboard?.instantiateViewControllerWithIdentifier("SecondVC") as SecondViewController
+        self.presentViewController(secondVC,animated:true,completion:nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

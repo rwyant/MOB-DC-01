@@ -41,113 +41,140 @@ class ViewController: UIViewController {
     
     func hideResults(boolValue: Bool){
         self.cardD1.hidden = boolValue
+        self.cardD1.userInteractionEnabled = false
         self.cardD2.hidden = boolValue
+        self.cardD2.userInteractionEnabled = false
         self.cardP1.hidden = boolValue
+        self.cardP1.userInteractionEnabled = false
         self.cardP2.hidden = boolValue
+        self.cardP2.userInteractionEnabled = false
         self.dealerText.hidden = boolValue
+        self.dealerText.userInteractionEnabled = false
         self.table.hidden = boolValue
+        self.table.userInteractionEnabled = false
         self.playAgain.hidden = boolValue
+        self.playAgain.userInteractionEnabled = false
         self.clearBet.hidden = boolValue
+        self.clearBet.userInteractionEnabled = false
         self.startGameView.hidden = false
+        self.startGameView.userInteractionEnabled = true
         self.add25.hidden = false
+        self.add25.userInteractionEnabled = true
         self.add50.hidden = false
+        self.add50.userInteractionEnabled = true
         self.add100.hidden = false
+        self.add100.userInteractionEnabled = true
         self.add250.hidden = false
+        self.add250.userInteractionEnabled = true
         self.add1k.hidden = false
-        self.wallettText.text = "Total: $\(wallet)"
+        self.add1k.userInteractionEnabled = true
+        self.wallettText.text = "Total: $\(self.wallet)"
     }
     
     
     @IBAction func clearBet(sender: UITapGestureRecognizer) {
-            if wallet < 25 {
-                felt.image = UIImage(named:"felt2")
+            if self.wallet < 25 {
+                self.felt.image = UIImage(named:"felt2")
                 hideResults(true)
-                bet = 0
-                wallet = 500
-                betText.text = "Make your bet by clicking the amounts below"
-                wallettText.text = "Total: $\(wallet)"
+                self.bet = 0
+                self.wallet = 500
+                self.betText.text = "Make your bet by clicking the amounts below"
+                self.wallettText.text = "Total: $\(self.wallet)"
                 println("New game. Bet is starting at 0. Wallet is starting at 500.")
             } else {
-                bet = 0
-                felt.image = UIImage(named:"felt2")
-                betText.text = "Make your bet by clicking the amounts below"
+                self.bet = 0
+                self.felt.image = UIImage(named:"felt2")
+                self.betText.text = "Make your bet by clicking the amounts below"
                 println("Clear bet back to $0")
         }
     }
     
     
     @IBAction func add25(sender: UITapGestureRecognizer) {
-        if (bet + 25) > wallet {
-            betText.text = "Sorry, you don't have enough money for that."
+        if (self.bet + 25) > self.wallet {
+            self.betText.text = "Sorry, you don't have enough money for that."
         } else {
-        bet += 25
-        clearBet.hidden = false
-        felt.image = UIImage(named:"felt4")
-        betText.text = "Your bet is \(bet). Click on the chips to START."
-        println("Add $25 to bet")
+            self.bet += 25
+            self.clearBet.hidden = false
+            self.clearBet.userInteractionEnabled = true
+            self.felt.image = UIImage(named:"felt4")
+            self.betText.text = "Your bet is \(self.bet). Click on the chips to START."
+            println("Add $25 to bet")
         }
     }
     @IBAction func add50(sender: UITapGestureRecognizer) {
-        if (bet + 50) > wallet {
-            betText.text = "Sorry, you don't have enough money for that."
+        if (self.bet + 50) > self.wallet {
+            self.betText.text = "Sorry, you don't have enough money for that."
         } else {
-            bet += 50
-        clearBet.hidden = false
-        felt.image = UIImage(named:"felt4")
-        betText.text = "Your bet is \(bet). Click on the chips to START."
+            self.bet += 50
+            self.clearBet.hidden = false
+            self.clearBet.userInteractionEnabled = true
+            self.felt.image = UIImage(named:"felt4")
+            self.betText.text = "Your bet is \(self.bet). Click on the chips to START."
         println("Add $50 to bet")
         }
     }
     @IBAction func add100(sender: UITapGestureRecognizer) {
-        if (bet + 100) > wallet {
-            betText.text = "Sorry, you don't have enough money for that."
+        if (self.bet + 100) > self.wallet {
+            self.betText.text = "Sorry, you don't have enough money for that."
         } else {
-            bet += 100
-        clearBet.hidden = false
-        felt.image = UIImage(named:"felt4")
-        betText.text = "Your bet is \(bet). Click on the chips to START."
+            self.bet += 100
+            self.clearBet.hidden = false
+            self.clearBet.userInteractionEnabled = true
+            self.felt.image = UIImage(named:"felt4")
+            self.betText.text = "Your bet is \(self.bet). Click on the chips to START."
         println("Add $100 to bet")
         }
     }
     @IBAction func add250(sender: UITapGestureRecognizer) {
-        if (bet + 250) > wallet {
-            betText.text = "Sorry, you don't have enough money for that."
+        if (self.bet + 250) > self.wallet {
+            self.betText.text = "Sorry, you don't have enough money for that."
         } else {
-            bet += 250
-        clearBet.hidden = false
-        felt.image = UIImage(named:"felt4")
-        betText.text = "Your bet is \(bet). Click on the chips to START."
-        println("Add $250 to bet")
+            self.bet += 250
+            self.clearBet.hidden = false
+            self.clearBet.userInteractionEnabled = true
+            self.felt.image = UIImage(named:"felt4")
+            self.betText.text = "Your bet is \(self.bet). Click on the chips to START."
+            println("Add $250 to bet")
         }
     }
     @IBAction func add1k(sender: UITapGestureRecognizer) {
-        if (bet + 1000) > wallet {
-            betText.text = "Sorry, you don't have enough money for that."
+        if (self.bet + 1000) > self.wallet {
+            self.betText.text = "Sorry, you don't have enough money for that."
         } else {
-            bet += 1000
-        clearBet.hidden = false
-        felt.image = UIImage(named:"felt4")
-        betText.text = "Your bet is \(bet). Click on the chips to START."
-        println("Add $1000 to bet")
+            self.bet += 1000
+            self.clearBet.hidden = false
+            self.clearBet.userInteractionEnabled = true
+            self.felt.image = UIImage(named:"felt4")
+            self.betText.text = "Your bet is \(self.bet). Click on the chips to START."
+            println("Add $1000 to bet")
         }
     }
     
     @IBAction func startGame(sender: UITapGestureRecognizer) {
         var startGame = CardGame()
-        playerHand = startGame.firstHand()
-        if playerHand == 22 {
-            betText.text = "Your bet is \(bet). Click on the chips to START."
+        self.playerHand = startGame.firstHand()
+        if self.playerHand == 22 {
+            self.betText.text = "Your bet is \(self.bet). Click on the chips to START."
         } else {
-            felt.image = UIImage(named:"felt")
-            betText.text = "You're starting with a hand of '\(String(playerHand))'."
-            table.hidden = false
-            add25.hidden = true
-            add50.hidden = true
-            add100.hidden = true
-            add250.hidden = true
-            add1k.hidden = true
-            startGameView.hidden = true
-            clearBet.hidden = true
+            self.felt.image = UIImage(named:"felt")
+            self.betText.text = "You're starting with a hand of '\(String(self.playerHand))'."
+            self.table.hidden = false
+            self.table.userInteractionEnabled = true
+            self.add25.hidden = true
+            self.add25.userInteractionEnabled = false
+            self.add50.hidden = true
+            self.add50.userInteractionEnabled = false
+            self.add100.hidden = true
+            self.add100.userInteractionEnabled = false
+            self.add250.hidden = true
+            self.add250.userInteractionEnabled = false
+            self.add1k.hidden = true
+            self.add1k.userInteractionEnabled = false
+            self.startGameView.hidden = true
+            self.startGameView.userInteractionEnabled = false
+            self.clearBet.hidden = true
+            self.clearBet.userInteractionEnabled = false
             println("New game")
         }
     }
@@ -157,26 +184,28 @@ class ViewController: UIViewController {
         var startGame = CardGame()
         
         var dealerHand = startGame.dealerHand()
-        playerHand += startGame.deal()
+        self.playerHand += startGame.deal()
         
-        if playerHand > 21 {
+        if self.playerHand > 21 {
 
-            var text = "Your new hand is \(String(playerHand))."
-            losses += 1
-            betText.text = "SORRY, YOU BUSTED."
-            resultText.text = text + "\nRECORD: Wins-\(wins) & Losses-\(losses)"
+            var text = "Your new hand is \(String(self.playerHand))."
+            self.losses += 1
+            self.betText.text = "SORRY, YOU BUSTED."
+            self.resultText.text = text + "\nRECORD: Wins-\(self.wins) & Losses-\(self.losses)"
 //            Player lost
-            wallet -= bet
-            wallettText.text = "Total: $\(wallet)"
+            self.wallet -= self.bet
+            self.wallettText.text = "Total: $\(self.wallet)"
             println("Player lost")
 
             //Play again logic
-            felt.image = UIImage(named:"felt3")
-            playAgain.hidden = false
-            table.hidden = true
+            self.felt.image = UIImage(named:"felt3")
+            self.playAgain.hidden = false
+            self.playAgain.userInteractionEnabled = true
+            self.table.hidden = true
+            self.table.userInteractionEnabled = false
         } else {
-            var text = "Your new hand is \(String(playerHand))."
-            betText.text = text
+            var text = "Your new hand is \(String(self.playerHand))."
+            self.betText.text = text
         }
     }
    
@@ -187,69 +216,85 @@ class ViewController: UIViewController {
         var dealerHand = startGame.dealerHand()
         if dealerHand > 21 {
             var text = "The dealer busts with a \(dealerHand).\n\nYOU WIN!"
-            wins += 1
-            resultText.text = text + "RECORD: Wins-\(wins) & Losses-\(losses)"
-            felt.image = UIImage(named:"felt3")
-            playAgain.hidden = false
-            table.hidden = true
+            self.wins += 1
+            self.resultText.text = text + "RECORD: Wins-\(self.wins) & Losses-\(self.losses)"
+            self.felt.image = UIImage(named:"felt3")
+            self.playAgain.hidden = false
+            self.playAgain.userInteractionEnabled = true
+            self.table.hidden = true
+            self.table.userInteractionEnabled = false
 //            Player won
-            wallet += bet
-            wallettText.text = "Total: $\(wallet)"
+            self.wallet += bet
+            self.wallettText.text = "Total: $\(self.wallet)"
             println("Player won")
         } else if dealerHand > playerHand {
             var text = "The dealer has a hand of \(String(dealerHand)). \n\nSORRY, YOU LOSE."
-            losses += 1
-            resultText.text = text + "\nRECORD: Wins-\(wins) & Losses-\(losses)"
-            felt.image = UIImage(named:"felt3")
-            playAgain.hidden = false
-            table.hidden = true
+            self.losses += 1
+            self.resultText.text = text + "\nRECORD: Wins-\(self.wins) & Losses-\(self.losses)"
+            self.felt.image = UIImage(named:"felt3")
+            self.playAgain.hidden = false
+            self.playAgain.userInteractionEnabled = true
+            self.table.hidden = true
+            self.table.userInteractionEnabled = false
 //            Player lost
-            wallet -= bet
-            wallettText.text = "Total: $\(wallet)"
+            self.wallet -= self.bet
+            self.wallettText.text = "Total: $\(self.wallet)"
             println("Player lost")
-        } else if dealerHand == playerHand {
+        } else if dealerHand == self.playerHand {
             var text = "The dealer has a hand of \(String(dealerHand)). \n\nLET'S TRY THAT AGAIN, YOU PUSHED."
-            felt.image = UIImage(named:"felt3")
-            playAgain.hidden = false
-            table.hidden = true
-            resultText.text = text + "\nRECORD: Wins-\(wins) & Losses-\(losses)"
+            self.felt.image = UIImage(named:"felt3")
+            self.playAgain.hidden = false
+            self.playAgain.userInteractionEnabled = true
+            self.table.hidden = true
+            self.table.userInteractionEnabled = false
+            self.resultText.text = text + "\nRECORD: Wins-\(self.wins) & Losses-\(self.losses)"
 //              Player pushed
             println("Push")
         } else {
             var text = "The dealer has a hand of \(String(dealerHand)). \n\nYOU WIN!"
-            wins += 1
-            resultText.text = text + "\nRECORD: Wins-\(wins) & Losses-\(losses)"
-            felt.image = UIImage(named:"felt3")
-            playAgain.hidden = false
-            table.hidden = true
+            self.wins += 1
+            self.resultText.text = text + "\nRECORD: Wins-\(self.wins) & Losses-\(self.losses)"
+            self.felt.image = UIImage(named:"felt3")
+            self.playAgain.hidden = false
+            self.playAgain.userInteractionEnabled = true
+            self.table.hidden = true
+            self.table.userInteractionEnabled = false
 //            Player won
-            wallet += bet
-            wallettText.text = "Total: $\(wallet)"
+            self.wallet += self.bet
+            self.wallettText.text = "Total: $\(self.wallet)"
             println("Player won")
         }
     }
     
     @IBAction func playAgain(sender: UITapGestureRecognizer) {
-        if wallet < 25 {
-            felt.image = UIImage(named:"felt5")
-            resultText.text = ""
-            bet = 0
-            playAgain.hidden = true
-            betText.text = "GAME OVER"
+        if self.wallet < 25 {
+            self.felt.image = UIImage(named:"felt5")
+            self.resultText.text = ""
+            self.bet = 0
+            self.playAgain.hidden = true
+            self.playAgain.userInteractionEnabled = false
+            self.betText.text = "GAME OVER"
             println("Player ran out of money. GAME OVER.")
         } else {
-            felt.image = UIImage(named:"felt2")
-            resultText.text = ""
-            bet = 0
-            betText.text = "Make your bet by clicking the amounts below"
+            self.felt.image = UIImage(named:"felt2")
+            self.resultText.text = ""
+            self.bet = 0
+            self.betText.text = "Make your bet by clicking the amounts below"
             println("Bet set to 0")
-            startGameView.hidden = false
-            clearBet.hidden = false
-            add25.hidden = false
-            add50.hidden = false
-            add100.hidden = false
-            add250.hidden = false
-            add1k.hidden = false
+            self.startGameView.hidden = false
+            self.startGameView.userInteractionEnabled = true
+            self.clearBet.hidden = false
+            self.clearBet.userInteractionEnabled = true
+            self.add25.hidden = false
+            self.add25.userInteractionEnabled = true
+            self.add50.hidden = false
+            self.add50.userInteractionEnabled = true
+            self.add100.hidden = false
+            self.add100.userInteractionEnabled = true
+            self.add250.hidden = false
+            self.add250.userInteractionEnabled = true
+            self.add1k.hidden = false
+            self.add1k.userInteractionEnabled = true
         }
     }
 

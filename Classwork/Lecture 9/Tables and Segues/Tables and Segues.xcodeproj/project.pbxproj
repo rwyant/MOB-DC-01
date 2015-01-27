@@ -13,6 +13,8 @@
 		85C39E661A770BE0005FF4DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C39E651A770BE0005FF4DF /* Images.xcassets */; };
 		85C39E691A770BE0005FF4DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C39E671A770BE0005FF4DF /* LaunchScreen.xib */; };
 		85C39E751A770BE0005FF4DF /* Tables_and_SeguesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C39E741A770BE0005FF4DF /* Tables_and_SeguesTests.swift */; };
+		85C39E811A771A93005FF4DF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C39E801A771A93005FF4DF /* SecondViewController.swift */; };
+		85C39E831A771AE8005FF4DF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C39E821A771AE8005FF4DF /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		85C39E6E1A770BE0005FF4DF /* Tables and SeguesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tables and SeguesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C39E731A770BE0005FF4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85C39E741A770BE0005FF4DF /* Tables_and_SeguesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tables_and_SeguesTests.swift; sourceTree = "<group>"; };
+		85C39E801A771A93005FF4DF /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		85C39E821A771AE8005FF4DF /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				85C39E651A770BE0005FF4DF /* Images.xcassets */,
 				85C39E671A770BE0005FF4DF /* LaunchScreen.xib */,
 				85C39E5C1A770BE0005FF4DF /* Supporting Files */,
+				85C39E801A771A93005FF4DF /* SecondViewController.swift */,
+				85C39E821A771AE8005FF4DF /* ThirdViewController.swift */,
 			);
 			path = "Tables and Segues";
 			sourceTree = "<group>";
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C39E811A771A93005FF4DF /* SecondViewController.swift in Sources */,
 				85C39E611A770BE0005FF4DF /* ViewController.swift in Sources */,
+				85C39E831A771AE8005FF4DF /* ThirdViewController.swift in Sources */,
 				85C39E5F1A770BE0005FF4DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -118,17 +118,6 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <swipeGestureRecognizer direction="right" id="Rg7-Lm-573">
-                    <connections>
-                        <action selector="swipeRight:" destination="vXZ-lx-hvc" id="PBy-aa-IXk"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer numberOfTapsRequired="2" id="8uR-HQ-Ak4">
-                    <connections>
-                        <action selector="doubleTap:" destination="vXZ-lx-hvc" id="oJN-pU-BA9"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Assessment_3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
@@ -138,7 +127,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felt.png" translatesAutoresizingMaskIntoConstraints="NO" id="zmJ-8U-siC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felt2.png" translatesAutoresizingMaskIntoConstraints="NO" id="zmJ-8U-siC">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="-1" y="29" width="323" height="540"/>
@@ -160,30 +149,6 @@
                                     <rect key="frame" x="33" y="139" width="129" height="30"/>
                                 </variation>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="dG6-8q-40z" userLabel="player1">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="309" width="59" height="80"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="FQb-Th-r3J" userLabel="player2">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="140" y="309" width="59" height="80"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="1P6-14-BJD" userLabel="dealer1">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="186" y="50" width="59" height="80"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="TmJ-IL-dT7" userLabel="dealer2">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="210" y="50" width="59" height="80"/>
-                                </variation>
-                            </imageView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZq-OW-Rka" userLabel="resultText">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -232,6 +197,30 @@
                                     <outletCollection property="gestureRecognizers" destination="Usu-Ba-AYO" appends="YES" id="hTg-mL-Bbg"/>
                                 </connections>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="dG6-8q-40z" userLabel="player1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="309" width="59" height="80"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="FQb-Th-r3J" userLabel="player2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="140" y="309" width="59" height="80"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="1P6-14-BJD" userLabel="dealer1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="186" y="50" width="59" height="80"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="TmJ-IL-dT7" userLabel="dealer2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="210" y="50" width="59" height="80"/>
+                                </variation>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjj-k9-ahZ" userLabel="add25">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <gestureRecognizers/>
@@ -292,6 +281,24 @@
                                     <outletCollection property="gestureRecognizers" destination="Otd-Ue-zas" appends="YES" id="ufN-IJ-pQJ"/>
                                 </connections>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kYD-LF-8QB" userLabel="player3">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="163" y="309" width="59" height="80"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yxe-Gv-aZ5" userLabel="player4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="186" y="309" width="59" height="80"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YYj-KR-5qa" userLabel="player5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="210" y="309" width="59" height="80"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -299,21 +306,24 @@
                                 <exclude reference="zmJ-8U-siC"/>
                                 <exclude reference="hgb-wv-TQb"/>
                                 <exclude reference="EMO-sQ-prS"/>
-                                <exclude reference="dG6-8q-40z"/>
-                                <exclude reference="FQb-Th-r3J"/>
-                                <exclude reference="1P6-14-BJD"/>
-                                <exclude reference="TmJ-IL-dT7"/>
                                 <exclude reference="KZq-OW-Rka"/>
                                 <exclude reference="iNB-1F-Xld"/>
                                 <exclude reference="LiH-Q5-z6m"/>
                                 <exclude reference="7fw-E6-tgU"/>
                                 <exclude reference="rjv-Q3-W1R"/>
+                                <exclude reference="dG6-8q-40z"/>
+                                <exclude reference="FQb-Th-r3J"/>
+                                <exclude reference="1P6-14-BJD"/>
+                                <exclude reference="TmJ-IL-dT7"/>
                                 <exclude reference="Mjj-k9-ahZ"/>
                                 <exclude reference="IHr-2K-9vy"/>
                                 <exclude reference="ldv-IZ-PJq"/>
                                 <exclude reference="XXc-q6-jgH"/>
                                 <exclude reference="I92-35-5ik"/>
                                 <exclude reference="nru-RS-QfV"/>
+                                <exclude reference="kYD-LF-8QB"/>
+                                <exclude reference="Yxe-Gv-aZ5"/>
+                                <exclude reference="YYj-KR-5qa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -321,21 +331,24 @@
                                 <include reference="zmJ-8U-siC"/>
                                 <include reference="hgb-wv-TQb"/>
                                 <include reference="EMO-sQ-prS"/>
-                                <include reference="dG6-8q-40z"/>
-                                <include reference="FQb-Th-r3J"/>
-                                <include reference="1P6-14-BJD"/>
-                                <include reference="TmJ-IL-dT7"/>
                                 <include reference="KZq-OW-Rka"/>
                                 <include reference="iNB-1F-Xld"/>
                                 <include reference="LiH-Q5-z6m"/>
                                 <include reference="7fw-E6-tgU"/>
                                 <include reference="rjv-Q3-W1R"/>
+                                <include reference="dG6-8q-40z"/>
+                                <include reference="FQb-Th-r3J"/>
+                                <include reference="1P6-14-BJD"/>
+                                <include reference="TmJ-IL-dT7"/>
                                 <include reference="Mjj-k9-ahZ"/>
                                 <include reference="IHr-2K-9vy"/>
                                 <include reference="ldv-IZ-PJq"/>
                                 <include reference="XXc-q6-jgH"/>
                                 <include reference="I92-35-5ik"/>
                                 <include reference="nru-RS-QfV"/>
+                                <include reference="kYD-LF-8QB"/>
+                                <include reference="Yxe-Gv-aZ5"/>
+                                <include reference="YYj-KR-5qa"/>
                             </mask>
                         </variation>
                     </view>
@@ -361,6 +374,17 @@
                         <outlet property="wallettText" destination="EMO-sQ-prS" id="NUH-GE-Y0q"/>
                     </connections>
                 </viewController>
+                <swipeGestureRecognizer direction="right" id="Rg7-Lm-573">
+                    <connections>
+                        <action selector="swipeRight:" destination="vXZ-lx-hvc" id="PBy-aa-IXk"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="8uR-HQ-Ak4">
+                    <connections>
+                        <action selector="doubleTap:" destination="vXZ-lx-hvc" id="oJN-pU-BA9"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <tapGestureRecognizer id="5Zd-9V-tOs" userLabel="add25">
                     <connections>
                         <action selector="add25:" destination="vXZ-lx-hvc" id="LMg-fG-8H3"/>
@@ -418,6 +442,6 @@
     <resources>
         <image name="back.png" width="71" height="96"/>
         <image name="blackJack_main.jpg" width="642" height="310"/>
-        <image name="felt.png" width="480" height="719"/>
+        <image name="felt2.png" width="480" height="719"/>
     </resources>
 </document>
