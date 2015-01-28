@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G0q-Oc-BQG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -32,47 +34,190 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMl-Di-GNm">
-                                <rect key="frame" x="154" y="187" width="294" height="154"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfe-3w-Nff" userLabel="swipeView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="293.5" id="pEs-UT-NKI"/>
-                                    <constraint firstAttribute="height" constant="154" id="z5Q-zy-Nta"/>
-                                </constraints>
+                                <gestureRecognizers/>
                                 <string key="text">TODO: When this is swiped horizontally,
 a modal should appear.
 It needs to have an image view and a dismiss button that dismisses the modal. Do this in code.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AG3-bY-Vru">
-                                <rect key="frame" x="236" y="382" width="128" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="DB9-Jg-gkA"/>
-                                    <constraint firstAttribute="height" constant="30" id="dwV-ga-14C"/>
-                                </constraints>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="c8K-4T-xvl" appends="YES" id="1Z6-yC-KHf"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4g-Tz-inN">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Display Table View">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="displayArrayTableButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lvp-VR-T8f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="AG3-bY-Vru" secondAttribute="centerX" id="0zs-lK-Y2n"/>
-                            <constraint firstAttribute="centerY" secondItem="AG3-bY-Vru" secondAttribute="centerY" constant="-97" id="RgT-FV-BaV"/>
-                            <constraint firstAttribute="centerX" secondItem="NMl-Di-GNm" secondAttribute="centerX" id="daB-TD-fOi"/>
-                            <constraint firstAttribute="centerY" secondItem="NMl-Di-GNm" secondAttribute="centerY" constant="36" id="lkv-nx-NKf"/>
+                            <constraint firstItem="Mfe-3w-Nff" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="128" id="02k-iW-2OS"/>
+                            <constraint firstItem="Mfe-3w-Nff" firstAttribute="centerX" secondItem="b4g-Tz-inN" secondAttribute="centerX" id="2dX-ut-EUJ"/>
+                            <constraint firstItem="Mfe-3w-Nff" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="GdP-lq-Nwm"/>
+                            <constraint firstItem="Mfe-3w-Nff" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="I40-gd-Cjr"/>
+                            <constraint firstAttribute="centerY" secondItem="b4g-Tz-inN" secondAttribute="centerY" constant="-103" id="WfP-Oy-YbF"/>
+                            <constraint firstItem="Mfe-3w-Nff" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="XW9-vh-FHc"/>
+                            <constraint firstItem="b4g-Tz-inN" firstAttribute="top" secondItem="Mfe-3w-Nff" secondAttribute="bottom" constant="16" id="bGU-BS-kH2"/>
+                            <constraint firstAttribute="centerX" secondItem="b4g-Tz-inN" secondAttribute="centerX" id="p7c-t2-60b"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Mfe-3w-Nff"/>
+                                <exclude reference="b4g-Tz-inN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="02k-iW-2OS"/>
+                                <exclude reference="2dX-ut-EUJ"/>
+                                <exclude reference="GdP-lq-Nwm"/>
+                                <exclude reference="I40-gd-Cjr"/>
+                                <exclude reference="XW9-vh-FHc"/>
+                                <exclude reference="WfP-Oy-YbF"/>
+                                <exclude reference="bGU-BS-kH2"/>
+                                <exclude reference="p7c-t2-60b"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Mfe-3w-Nff"/>
+                                <include reference="b4g-Tz-inN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="02k-iW-2OS"/>
+                                <include reference="2dX-ut-EUJ"/>
+                                <exclude reference="GdP-lq-Nwm"/>
+                                <include reference="I40-gd-Cjr"/>
+                                <include reference="XW9-vh-FHc"/>
+                                <include reference="WfP-Oy-YbF"/>
+                                <include reference="bGU-BS-kH2"/>
+                                <include reference="p7c-t2-60b"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="hzY-Hy-RMA"/>
                     <connections>
-                        <segue destination="tH5-nV-9zA" kind="show" identifier="show" id="O1F-Kb-DN0"/>
+                        <outlet property="swipeTextView" destination="Mfe-3w-Nff" id="LNy-q8-B6L"/>
+                        <segue destination="tH5-nV-9zA" kind="show" identifier="showArrayTable" id="O1F-Kb-DN0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="c8K-4T-xvl" userLabel="swipeRight"/>
             </objects>
-            <point key="canvasLocation" x="282.75" y="407"/>
+            <point key="canvasLocation" x="282" y="407"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="1hh-pC-0YN">
+            <objects>
+                <viewController storyboardIdentifier="ModalVC" id="ntZ-8K-grP" customClass="ModalViewController" customModule="Lesson03" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KXc-RX-TAR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eff-oI-rrh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y3U-cS-LKr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hello-world.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vpn-P9-6YO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="FQc-vb-PBM">
+                                        <variation key="widthClass=compact" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FQc-vb-PBM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="FQc-vb-PBM"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNB-Kc-Wny">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lXZ-TO-sKi"/>
+                                    <constraint firstAttribute="width" constant="100" id="ziz-Sj-xAk"/>
+                                </constraints>
+                                <state key="normal" title="dismiss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lXZ-TO-sKi"/>
+                                        <exclude reference="ziz-Sj-xAk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="lXZ-TO-sKi"/>
+                                        <include reference="ziz-Sj-xAk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="dismissModalViewControllerButton:" destination="ntZ-8K-grP" eventType="touchUpInside" id="lXL-OF-XMq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vpn-P9-6YO" firstAttribute="top" secondItem="KXc-RX-TAR" secondAttribute="bottom" constant="8" id="MiU-2B-JAh"/>
+                            <constraint firstAttribute="centerX" secondItem="wNB-Kc-Wny" secondAttribute="centerX" id="UiD-nb-zed"/>
+                            <constraint firstItem="Eff-oI-rrh" firstAttribute="top" secondItem="wNB-Kc-Wny" secondAttribute="bottom" constant="219" id="YJP-dn-OeY">
+                                <variation key="widthClass=compact" constant="275"/>
+                            </constraint>
+                            <constraint firstItem="vpn-P9-6YO" firstAttribute="top" secondItem="KXc-RX-TAR" secondAttribute="bottom" constant="8" id="bXr-0x-uJg"/>
+                            <constraint firstAttribute="centerX" secondItem="wNB-Kc-Wny" secondAttribute="centerX" id="kzD-5f-bnf"/>
+                            <constraint firstItem="vpn-P9-6YO" firstAttribute="leading" secondItem="y3U-cS-LKr" secondAttribute="leadingMargin" id="lJQ-W7-ke1"/>
+                            <constraint firstItem="vpn-P9-6YO" firstAttribute="trailing" secondItem="y3U-cS-LKr" secondAttribute="trailingMargin" id="tm0-Xp-fFc"/>
+                            <constraint firstItem="wNB-Kc-Wny" firstAttribute="centerX" secondItem="vpn-P9-6YO" secondAttribute="centerX" id="yql-DN-78r"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="vpn-P9-6YO"/>
+                                <exclude reference="wNB-Kc-Wny"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="MiU-2B-JAh"/>
+                                <exclude reference="bXr-0x-uJg"/>
+                                <exclude reference="lJQ-W7-ke1"/>
+                                <exclude reference="tm0-Xp-fFc"/>
+                                <exclude reference="UiD-nb-zed"/>
+                                <exclude reference="kzD-5f-bnf"/>
+                                <exclude reference="yql-DN-78r"/>
+                                <exclude reference="YJP-dn-OeY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="vpn-P9-6YO"/>
+                                <include reference="wNB-Kc-Wny"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="MiU-2B-JAh"/>
+                                <include reference="bXr-0x-uJg"/>
+                                <include reference="lJQ-W7-ke1"/>
+                                <include reference="tm0-Xp-fFc"/>
+                                <include reference="UiD-nb-zed"/>
+                                <include reference="kzD-5f-bnf"/>
+                                <include reference="yql-DN-78r"/>
+                                <include reference="YJP-dn-OeY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jyn-jB-FwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="1075"/>
         </scene>
         <!--Array Table View Controller-->
         <scene sceneID="hS5-QX-ITe">
@@ -93,4 +238,7 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
             <point key="canvasLocation" x="969" y="407"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hello-world.jpg" width="824" height="566"/>
+    </resources>
 </document>

@@ -105,6 +105,7 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                         <viewControllerLayoutGuide type="bottom" id="Pku-y1-0jO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4Qa-d9-0l7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hello-world.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dHw-nG-Nkh">
