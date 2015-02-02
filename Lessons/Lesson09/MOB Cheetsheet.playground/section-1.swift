@@ -7,44 +7,44 @@
 
 /******************************* Animations ************************************/
 // 0.5 is the animationduration
-UIView.animateWithDuration(0.5, animations: {
-    // We can stack as many animations as needed in this container. You change the property of an object. Whatever proprty gets changed in this block is what animates.
-    square.backgroundColor = UIColor.blueColor() //we haven't defined square, this is just an example
-})
-
-/******************************* Alerts ************************************/
-// Show alert. This does not need to be placed in a function, this is just more modular.
-func displayAlert(#title: String, message: String, buttonText: String) {
-    let alert = UIAlertView()
-    alert.title = title
-    alert.message = message
-    // We can add other buttons
-    alert.addButtonWithTitle(buttonText)
-    // We call the show() method once we have all of our alert properties set
-    alert.show()
-}
-
-/******************************* Adding gestures programatically ************************************/
-func prepareSwipe() {
-    // didswipe in this scenario is the function that should be called after user successfully completes the gesture.
-    // we also have access to the other gestures. ie: UITapGestureRecognizer. This is where we define the gesture.
-    let swipeUpGesture = UISwipeGestureRecognizer(target: self, action: Selector("didSwipe:"))
-    
-    // We can add gesture options. For example, we can also addd number of touches (numberOfTouches).
-    swipeUpGesture.direction = UISwipeGestureRecognizerDirection.Up
-    
-    // After we set all of our options we add our gesture to our object, in this case a label that we may have defined at another point.
-    label.addGestureRecognizer(swipeUpGesture) // reminder: we haven't defined label, replace this with the object you want a gesture for.
-    // Another example: you can add a gesture recognizer to the whole scene with: self.view.addGestureRecognizer(swipeUpGesture)
-    // We can also remove gesture from an object with removeGestureRecognizer. ex: label.removeGestureRecognizer(swipeUpGesture).
-}
-
-// The method that gets called when the gesture is complete
-func didSwipe(sender: UISwipeGestureRecognizer) {
-    println("Gesture completed successfully")
-}
-
-// prepareSwipe() should then be called from viewDidLoad, or at the point that you want to add a gesture to an object. That logic does not need to be in a function, it is just cleaner to seperate it.
+//UIView.animateWithDuration(0.5, animations: {
+//    // We can stack as many animations as needed in this container. You change the property of an object. Whatever proprty gets changed in this block is what animates.
+//    square.backgroundColor = UIColor.blueColor() //we haven't defined square, this is just an example
+//})
+//
+///******************************* Alerts ************************************/
+//// Show alert. This does not need to be placed in a function, this is just more modular.
+//func displayAlert(#title: String, message: String, buttonText: String) {
+//    let alert = UIAlertView()
+//    alert.title = title
+//    alert.message = message
+//    // We can add other buttons
+//    alert.addButtonWithTitle(buttonText)
+//    // We call the show() method once we have all of our alert properties set
+//    alert.show()
+//}
+//
+///******************************* Adding gestures programatically ************************************/
+//func prepareSwipe() {
+//    // didswipe in this scenario is the function that should be called after user successfully completes the gesture.
+//    // we also have access to the other gestures. ie: UITapGestureRecognizer. This is where we define the gesture.
+//    let swipeUpGesture = UISwipeGestureRecognizer(target: self, action: Selector("didSwipe:"))
+//    
+//    // We can add gesture options. For example, we can also addd number of touches (numberOfTouches).
+//    swipeUpGesture.direction = UISwipeGestureRecognizerDirection.Up
+//    
+//    // After we set all of our options we add our gesture to our object, in this case a label that we may have defined at another point.
+//    label.addGestureRecognizer(swipeUpGesture) // reminder: we haven't defined label, replace this with the object you want a gesture for.
+//    // Another example: you can add a gesture recognizer to the whole scene with: self.view.addGestureRecognizer(swipeUpGesture)
+//    // We can also remove gesture from an object with removeGestureRecognizer. ex: label.removeGestureRecognizer(swipeUpGesture).
+//}
+//
+//// The method that gets called when the gesture is complete
+//func didSwipe(sender: UISwipeGestureRecognizer) {
+//    println("Gesture completed successfully")
+//}
+//
+//// prepareSwipe() should then be called from viewDidLoad, or at the point that you want to add a gesture to an object. That logic does not need to be in a function, it is just cleaner to seperate it.
 
 /******************************* Arrays ************************************/
 // Creating arrays: inferred type if array is populated
