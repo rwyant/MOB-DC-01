@@ -85,6 +85,28 @@
                                     <action selector="saveAndGoBack:" destination="1ox-wY-PqA" eventType="touchUpInside" id="F73-sX-gUf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hidden Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6P-LV-yDX">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="149" y="250" width="102" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVn-CR-ki6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Post Notification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="124" y="317" width="152" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="pressPostButton:" destination="1ox-wY-PqA" eventType="touchUpInside" id="w35-fc-Uno"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -99,6 +121,8 @@
                             <mask key="subviews">
                                 <exclude reference="UJR-oi-yLa"/>
                                 <exclude reference="GOC-jf-oCb"/>
+                                <exclude reference="V6P-LV-yDX"/>
+                                <exclude reference="yVn-CR-ki6"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="7Fm-JR-T5a"/>
@@ -113,6 +137,8 @@
                             <mask key="subviews">
                                 <include reference="UJR-oi-yLa"/>
                                 <include reference="GOC-jf-oCb"/>
+                                <include reference="V6P-LV-yDX"/>
+                                <include reference="yVn-CR-ki6"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="7Fm-JR-T5a"/>
@@ -126,6 +152,7 @@
                     </view>
                     <connections>
                         <outlet property="addTextBox" destination="UJR-oi-yLa" id="w3L-fP-tcj"/>
+                        <outlet property="hiddenLabel" destination="V6P-LV-yDX" id="V3d-h7-SN2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CjT-4v-Bfy" userLabel="First Responder" sceneMemberID="firstResponder"/>

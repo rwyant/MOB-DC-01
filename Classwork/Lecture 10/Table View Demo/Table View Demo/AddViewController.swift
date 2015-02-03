@@ -15,6 +15,7 @@ protocol Campus {
 class AddViewController: UIViewController {
     
     @IBOutlet weak var addTextBox: UITextField!
+    @IBOutlet weak var hiddenLabel: UILabel!
     
     var delegate: Campus?
     
@@ -23,10 +24,29 @@ class AddViewController: UIViewController {
         self.dismissViewControllerAnimated(true,completion:nil)
     }
 
+    @IBAction func apendList(sender: UIButton) {
+    }
+    
+    @IBAction func pressPostButton(sender: UIButton) {
+        NSNotificationCenter.defaultCenter().postNotificationName("unhideHiddenLabels", object: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.hiddenLabel.hidden = true
         // Do any additional setup after loading the view.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "unhideCurrentLabels:", name: "unhideHiddenLabels", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"textHasChanged:", name:UITextFieldTextDidChangeNotification, object:nil)
+    }
+    
+    func textHasChanged(notification:NSNotification) {
+        println("Horray, text has changed!")
+    }
+    
+    func unhideCurrentLabels(notification:NSNotification) {
+        self.hiddenLabel.hidden = false
+        println("Triggered unhideHiddenLabels notification")
     }
 
     override func didReceiveMemoryWarning() {

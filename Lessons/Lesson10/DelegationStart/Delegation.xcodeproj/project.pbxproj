@@ -81,13 +81,10 @@
 		4DB0D1301A79E0860038292E /* Delegation */ = {
 			isa = PBXGroup;
 			children = (
-				4DB0D1331A79E0860038292E /* AppDelegate.swift */,
 				4DB0D1531A79E3370038292E /* EventsTableViewController.swift */,
 				4DB0D1551A79E34A0038292E /* AddEventViewController.swift */,
 				4DB0D1591A7B26C50038292E /* Event.swift */,
 				4DB0D1371A79E0860038292E /* Main.storyboard */,
-				4DB0D13A1A79E0860038292E /* Images.xcassets */,
-				4DB0D13C1A79E0860038292E /* LaunchScreen.xib */,
 				4DB0D1311A79E0860038292E /* Supporting Files */,
 			);
 			path = Delegation;
@@ -96,6 +93,9 @@
 		4DB0D1311A79E0860038292E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4DB0D13A1A79E0860038292E /* Images.xcassets */,
+				4DB0D13C1A79E0860038292E /* LaunchScreen.xib */,
+				4DB0D1331A79E0860038292E /* AppDelegate.swift */,
 				4DB0D1321A79E0860038292E /* Info.plist */,
 			);
 			name = "Supporting Files";

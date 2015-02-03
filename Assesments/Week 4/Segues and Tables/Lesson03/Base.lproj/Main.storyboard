@@ -74,14 +74,14 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                                 <exclude reference="b4g-Tz-inN"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="WfP-Oy-YbF"/>
+                                <exclude reference="bGU-BS-kH2"/>
+                                <exclude reference="p7c-t2-60b"/>
                                 <exclude reference="02k-iW-2OS"/>
                                 <exclude reference="2dX-ut-EUJ"/>
                                 <exclude reference="GdP-lq-Nwm"/>
                                 <exclude reference="I40-gd-Cjr"/>
                                 <exclude reference="XW9-vh-FHc"/>
-                                <exclude reference="WfP-Oy-YbF"/>
-                                <exclude reference="bGU-BS-kH2"/>
-                                <exclude reference="p7c-t2-60b"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -90,14 +90,14 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                                 <include reference="b4g-Tz-inN"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="WfP-Oy-YbF"/>
+                                <include reference="bGU-BS-kH2"/>
+                                <include reference="p7c-t2-60b"/>
                                 <exclude reference="02k-iW-2OS"/>
                                 <include reference="2dX-ut-EUJ"/>
                                 <exclude reference="GdP-lq-Nwm"/>
                                 <include reference="I40-gd-Cjr"/>
                                 <include reference="XW9-vh-FHc"/>
-                                <include reference="WfP-Oy-YbF"/>
-                                <include reference="bGU-BS-kH2"/>
-                                <include reference="p7c-t2-60b"/>
                             </mask>
                         </variation>
                     </view>
@@ -187,14 +187,14 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                                 <exclude reference="wNB-Kc-Wny"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="YJP-dn-OeY"/>
+                                <exclude reference="UiD-nb-zed"/>
+                                <exclude reference="kzD-5f-bnf"/>
+                                <exclude reference="yql-DN-78r"/>
                                 <exclude reference="MiU-2B-JAh"/>
                                 <exclude reference="bXr-0x-uJg"/>
                                 <exclude reference="lJQ-W7-ke1"/>
                                 <exclude reference="tm0-Xp-fFc"/>
-                                <exclude reference="UiD-nb-zed"/>
-                                <exclude reference="kzD-5f-bnf"/>
-                                <exclude reference="yql-DN-78r"/>
-                                <exclude reference="YJP-dn-OeY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -203,14 +203,14 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                                 <include reference="wNB-Kc-Wny"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="YJP-dn-OeY"/>
+                                <include reference="UiD-nb-zed"/>
+                                <include reference="kzD-5f-bnf"/>
+                                <include reference="yql-DN-78r"/>
                                 <include reference="MiU-2B-JAh"/>
                                 <include reference="bXr-0x-uJg"/>
                                 <include reference="lJQ-W7-ke1"/>
                                 <include reference="tm0-Xp-fFc"/>
-                                <include reference="UiD-nb-zed"/>
-                                <include reference="kzD-5f-bnf"/>
-                                <include reference="yql-DN-78r"/>
-                                <include reference="YJP-dn-OeY"/>
                             </mask>
                         </variation>
                     </view>

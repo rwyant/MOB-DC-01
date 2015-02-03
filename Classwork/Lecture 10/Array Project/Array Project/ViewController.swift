@@ -12,31 +12,64 @@ protocol LabelInfo {
     func setLabelText(textInfo:String)
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textBoxField: UITextField!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var discoLabel: UILabel!
+
+    var delegate: LabelInfo?
+    var discoArray: [String] = []
     
     
-    var delegate = LabelInfo?()
+    @IBAction func addAndGoBack(sender: UIButton) {
+        println("button pressed")
+        if textBoxField.text.isEmpty {
+            println("Your table view is empty")
+            self.textLabel.hidden = false
+            self.textLabel.text = "Please add an item to the To Do list."
+        } else {
+            self.textLabel.hidden = true
+            self.delegate?.setLabelText(textBoxField.text)
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
+    
+    @IBAction func cancelButton(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    func textFieldShouldReturn(textField:UITextField) -> Bool {
+        println("Return key pressed")
+        textField.resignFirstResponder()
+        if textBoxField.text.isEmpty {
+            println("Your table view is empty")
+            self.textLabel.hidden = false
+            self.textLabel.text = "Please add an item to the To Do list."
+        } else {
+            self.textLabel.hidden = true
+            self.delegate?.setLabelText(textBoxField.text)
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        return true
+    }
+    
+    
+    func textHasChanged(notification:NSNotification) {
+        self.view.backgroundColor = UIColor(red: CGFloat(drand48()),green: CGFloat(drand48()), blue:CGFloat(drand48()), alpha:1)
+        self.discoArray.append(textBoxField.text)
+        discoLabel.text = discoArray.last
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.textLabel.hidden = true
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"textHasChanged:", name:UITextFieldTextDidChangeNotification, object:nil)
     }
-    
-    @IBAction func appendToList(sender: UIButton) {
-        self.delegate?.setLabelText(textField.text)
-        self.dismissViewControllerAnimated(true, completion: nil)
         
-    }
-
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ios_delegates" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mu5-TP-tme">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="RKB-W7-YXm"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="WpM-xJ-EHZ"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GA Campuses" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlN-Xx-Afs">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bxF-nf-gN5">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mu5-TP-tme" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Cwk-zY-qrr"/>
+                            <constraint firstItem="mu5-TP-tme" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="GId-uJ-2e5"/>
+                            <constraint firstAttribute="trailing" secondItem="mu5-TP-tme" secondAttribute="trailing" id="Krh-n9-VNF"/>
+                            <constraint firstItem="bxF-nf-gN5" firstAttribute="top" secondItem="mlN-Xx-Afs" secondAttribute="bottom" constant="13" id="QPd-Yy-tl7"/>
+                            <constraint firstItem="mlN-Xx-Afs" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="26" id="Qay-aE-kgV"/>
+                            <constraint firstItem="mu5-TP-tme" firstAttribute="top" secondItem="bxF-nf-gN5" secondAttribute="bottom" constant="15" id="iU5-Cg-9uC"/>
+                            <constraint firstItem="mu5-TP-tme" firstAttribute="centerX" secondItem="bxF-nf-gN5" secondAttribute="centerX" id="oc8-kM-2Qe"/>
+                            <constraint firstItem="bxF-nf-gN5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="onb-9o-36J"/>
+                            <constraint firstItem="mlN-Xx-Afs" firstAttribute="centerX" secondItem="bxF-nf-gN5" secondAttribute="centerX" id="vkU-z8-Mlf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mu5-TP-tme"/>
+                                <exclude reference="mlN-Xx-Afs"/>
+                                <exclude reference="bxF-nf-gN5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="QPd-Yy-tl7"/>
+                                <exclude reference="onb-9o-36J"/>
+                                <exclude reference="Qay-aE-kgV"/>
+                                <exclude reference="vkU-z8-Mlf"/>
+                                <exclude reference="Cwk-zY-qrr"/>
+                                <exclude reference="GId-uJ-2e5"/>
+                                <exclude reference="Krh-n9-VNF"/>
+                                <exclude reference="iU5-Cg-9uC"/>
+                                <exclude reference="oc8-kM-2Qe"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mu5-TP-tme"/>
+                                <include reference="mlN-Xx-Afs"/>
+                                <include reference="bxF-nf-gN5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QPd-Yy-tl7"/>
+                                <include reference="onb-9o-36J"/>
+                                <include reference="Qay-aE-kgV"/>
+                                <include reference="vkU-z8-Mlf"/>
+                                <include reference="Cwk-zY-qrr"/>
+                                <include reference="GId-uJ-2e5"/>
+                                <include reference="Krh-n9-VNF"/>
+                                <include reference="iU5-Cg-9uC"/>
+                                <include reference="oc8-kM-2Qe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="campusesTable" destination="mu5-TP-tme" id="zd2-rG-d9N"/>
+                        <outlet property="gaTextField" destination="bxF-nf-gN5" id="Ge5-DS-a2t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
