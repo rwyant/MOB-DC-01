@@ -14,9 +14,9 @@ protocol LabelInfo {
 
 class ViewController: UIViewController, UITableViewDelegate {
 
+    @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var textBoxField: UITextField!
     @IBOutlet weak var textLabel: UILabel!
-    @IBOutlet weak var discoLabel: UILabel!
 
     var delegate: LabelInfo?
     var discoArray: [String] = ["😄","😉","😘","😳","😜","😝","😂","😖","😎","😯","💩"]
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     func textHasChanged(notification:NSNotification) {
         self.view.backgroundColor = UIColor(red: CGFloat(drand48()),green: CGFloat(drand48()), blue:CGFloat(drand48()), alpha:1)
         var randDiscoNum = arc4random_uniform(11)
-        discoLabel.text = discoArray[Int(randDiscoNum)]
+        emojiLabel.text = discoArray[Int(randDiscoNum)]
     }
     
     override func viewDidLoad() {
