@@ -9,15 +9,15 @@
 import UIKit
 
 protocol EventProtocol {
-    func addEvent(newEvent:Event)
+    func saveEvent(newEvent:Event)
 }
 
 class AddEventViewController: UIViewController {
+    // Create an instance of the delegate
+    var delegate:EventProtocol?
 
     @IBOutlet var nameLabel: UITextField!
     @IBOutlet var locationLabel: UITextField!
-    
-    var delegate:EventProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,21 +33,18 @@ class AddEventViewController: UIViewController {
     }
     
     func save() {
-<<<<<<< HEAD
-        let newEvent = Event(name:nameLabel.text, location: locationLabel.text)
-=======
+        // create new event from struct
         let newEvent = Event(name: nameLabel.text, location: locationLabel.text)
->>>>>>> d50e9ad887a2aa4075864182e80e9a07beb02d66
-        self.delegate?.addEvent(newEvent)
+        
+        // send delgate message
+        self.delegate?.saveEvent(newEvent)
+        
+        // use existing dismiss function to dismiss our view
         dismiss()
     }
     
     func dismiss() {
-<<<<<<< HEAD
-        self.dismissViewControllerAnimated(true, completion:nil)
-=======
         self.dismissViewControllerAnimated(true, completion: nil)
->>>>>>> d50e9ad887a2aa4075864182e80e9a07beb02d66
     }
 
 }

@@ -14,12 +14,21 @@ class EventsTableViewController: UITableViewController, EventProtocol {
 
     @IBAction func addEvent(sender: UIBarButtonItem) {
         let addEventViewController = self.storyboard?.instantiateViewControllerWithIdentifier("addEventVC") as AddEventViewController
+<<<<<<< HEAD
+=======
+        addEventViewController.delegate = self
+>>>>>>> d50e9ad887a2aa4075864182e80e9a07beb02d66
         let navigationController = UINavigationController(rootViewController: addEventViewController)
         self.presentViewController(navigationController, animated: true, completion: nil)
     }
     
+<<<<<<< HEAD
     func addEvent(newEvent:Event) {
         println("Foo")
+=======
+    func addEvent(newEvent: Event) {
+        println("foo")
+>>>>>>> d50e9ad887a2aa4075864182e80e9a07beb02d66
         self.arrEvents.append(newEvent)
     }
 
@@ -31,13 +40,16 @@ class EventsTableViewController: UITableViewController, EventProtocol {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.arrEvents.count
     }
-
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> d50e9ad887a2aa4075864182e80e9a07beb02d66
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("eventCell", forIndexPath: indexPath) as UITableViewCell
     
     // Configure the cell...
+<<<<<<< HEAD
         let currentEvent = self.arrEvents[indexPath.row]
         cell.textLabel?.text = currentEvent.name
         cell.detailTextLabel?.text = currentEvent.location
@@ -45,5 +57,14 @@ class EventsTableViewController: UITableViewController, EventProtocol {
     return cell
     }
     
+=======
+    let currentEvent = self.arrEvents[indexPath.row]
+    cell.textLabel.text = currentEvent.name
+    cell.detailTextLabel?.text = currentEvent.location
+    
+    return cell
+    }
+
+>>>>>>> d50e9ad887a2aa4075864182e80e9a07beb02d66
 
 }
