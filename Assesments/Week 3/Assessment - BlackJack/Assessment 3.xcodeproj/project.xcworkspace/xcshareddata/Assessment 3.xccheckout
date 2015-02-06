@@ -10,26 +10,22 @@
 	<string>Assessment 3</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
-		<string>https://github.com/rwyant/MOB-DC-01.git</string>
 		<key>A693B5375C4134D899E049311A3F90EF5523E6BF</key>
 		<string>https://github.com/rwyant/blackjack.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Assesments/Week 3/Assessment - BlackJack/Assessment 3.xcodeproj</string>
+	<string>Assessment - BlackJack/Assessment 3.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
-		<string>../../../../..</string>
 		<key>A693B5375C4134D899E049311A3F90EF5523E6BF</key>
-		<string>../../../../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/rwyant/MOB-DC-01.git</string>
+	<string>https://github.com/rwyant/blackjack.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>10A52EA4FBADB6C746B5260032017E5923CCC696</string>
+	<string>A693B5375C4134D899E049311A3F90EF5523E6BF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -44,9 +40,9 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>10A52EA4FBADB6C746B5260032017E5923CCC696</string>
+			<string>A693B5375C4134D899E049311A3F90EF5523E6BF</string>
 			<key>IDESourceControlWCCName</key>
-			<string>RobClone-MOB-DC-01</string>
+			<string>blackjack</string>
 		</dict>
 	</array>
 </dict>
