@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6174A4F6-1435-4409-B633-799C7A9671C2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Delegation &amp; Notifications</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
+		<string>https://github.com/rwyant/MOB-DC-01.git</string>
+		<key>A693B5375C4134D899E049311A3F90EF5523E6BF</key>
+		<string>https://github.com/rwyant/blackjack.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Assesments/Week 5/Delegation &amp; Notifications/Delegation &amp; Notifications.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
+		<string>../../../../..</string>
+		<key>A693B5375C4134D899E049311A3F90EF5523E6BF</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rwyant/MOB-DC-01.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>10A52EA4FBADB6C746B5260032017E5923CCC696</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A693B5375C4134D899E049311A3F90EF5523E6BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>10A52EA4FBADB6C746B5260032017E5923CCC696</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RobClone-MOB-DC-01</string>
+		</dict>
+	</array>
+</dict>
+</plist>
