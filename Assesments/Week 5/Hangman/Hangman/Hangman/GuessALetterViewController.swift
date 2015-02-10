@@ -13,9 +13,10 @@ protocol PassLetter {
 }
 
 class GuessALetterViewController: UIViewController, UITextFieldDelegate {
-
+    @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var pickALetterText: UITextField!
 
+    var emojiArray: [String] = ["😄","😉","😘","😳","😜","😝","😂","😖","😎","😯","💩"]
     var delegate: PassLetter?
     
     @IBAction func returnToVC(sender: UIButton) {
@@ -30,6 +31,8 @@ class GuessALetterViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        var randDiscoNum = arc4random_uniform(11)
+        emojiLabel.text = emojiArray[Int(randDiscoNum)]
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"textHasChanged:", name:UITextFieldTextDidChangeNotification, object:nil)
     }
 
