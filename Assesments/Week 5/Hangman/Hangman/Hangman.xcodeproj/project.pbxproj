@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8587D13F1A89BB690036E598 /* GuessALetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587D13E1A89BB690036E598 /* GuessALetterViewController.swift */; };
+		8587D1431A8A09C80036E598 /* icon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8587D1421A8A09C80036E598 /* icon72x72@2x.png */; };
 		85A0E2251A8833D500CBF661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A0E2241A8833D500CBF661 /* AppDelegate.swift */; };
 		85A0E2271A8833D500CBF661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A0E2261A8833D500CBF661 /* ViewController.swift */; };
 		85A0E22A1A8833D500CBF661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A0E2281A8833D500CBF661 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8587D13E1A89BB690036E598 /* GuessALetterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessALetterViewController.swift; sourceTree = "<group>"; };
+		8587D1421A8A09C80036E598 /* icon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon72x72@2x.png"; sourceTree = "<group>"; };
 		85A0E21F1A8833D500CBF661 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A0E2231A8833D500CBF661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85A0E2241A8833D500CBF661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				85A0E2261A8833D500CBF661 /* ViewController.swift */,
+				8587D13E1A89BB690036E598 /* GuessALetterViewController.swift */,
 				85A0E2281A8833D500CBF661 /* Main.storyboard */,
 				85A0E2221A8833D500CBF661 /* Supporting Files */,
 			);
@@ -87,6 +92,7 @@
 		85A0E2221A8833D500CBF661 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8587D1421A8A09C80036E598 /* icon72x72@2x.png */,
 				85A0E2241A8833D500CBF661 /* AppDelegate.swift */,
 				85A0E22B1A8833D500CBF661 /* Images.xcassets */,
 				85A0E22D1A8833D500CBF661 /* LaunchScreen.xib */,
@@ -192,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8587D1431A8A09C80036E598 /* icon72x72@2x.png in Resources */,
 				85A0E22A1A8833D500CBF661 /* Main.storyboard in Resources */,
 				85A0E22F1A8833D500CBF661 /* LaunchScreen.xib in Resources */,
 				85A0E22C1A8833D500CBF661 /* Images.xcassets in Resources */,
@@ -214,6 +221,7 @@
 			files = (
 				85A0E2271A8833D500CBF661 /* ViewController.swift in Sources */,
 				85A0E2251A8833D500CBF661 /* AppDelegate.swift in Sources */,
+				8587D13F1A89BB690036E598 /* GuessALetterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 				85A0E2401A8833D500CBF661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85A0E2411A8833D500CBF661 /* Build configuration list for PBXNativeTarget "HangmanTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				85A0E2431A8833D500CBF661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
