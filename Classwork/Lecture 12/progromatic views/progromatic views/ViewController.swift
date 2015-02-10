@@ -55,19 +55,19 @@ class ViewController: UIViewController {
             whiteBox.frame = CGRect(x:1, y:1, width:100, height:100)
         }, completion: nil)
         
-        for i in 1...10 {
-            for i in 1...10{
+        for i in 1...7 {
+            for i in 1...7{
                 var starImage = UIImage(named: "star")
                 var starImageImageView = UIImageView(image: starImage)
                 starImageImageView.frame = CGRect(x: xValue, y: yValue, width: 0, height: 10)
                 outlineBox.addSubview(starImageImageView)
                 
                 UIImageView.animateWithDuration(0.5, delay: delay, options: UIViewAnimationOptions.CurveEaseInOut, animations:{
-                    starImageImageView.frame = CGRect(x: starImageImageView.frame.origin.x, y: starImageImageView.frame.origin.y, width: 10, height:10)}, completion: nil)
-                xValue += 10
+                    starImageImageView.frame = CGRect(x: starImageImageView.frame.origin.x, y: starImageImageView.frame.origin.y, width: 14.28, height:14.28)}, completion: nil)
+                xValue += Int(14.28)
             }
             xValue = 1
-            yValue += 10
+            yValue += Int(14.28)
             delay += 0.2
         }
         println("Fuck yeah.")
