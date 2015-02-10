@@ -36,9 +36,6 @@
                                     <constraint firstItem="3cu-lx-zna" firstAttribute="leading" secondItem="cbP-Xw-y0b" secondAttribute="leadingMargin" id="vEc-YQ-Rn8"/>
                                     <constraint firstItem="3cu-lx-zna" firstAttribute="trailing" secondItem="cbP-Xw-y0b" secondAttribute="trailingMargin" id="xpL-Ze-HLA"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="u6W-P4-3qm" appends="YES" id="vyV-8c-QJ1"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fO3-i2-NsH">
                                 <rect key="frame" x="16" y="28" width="280" height="138"/>
@@ -90,6 +87,7 @@
                                     <constraint firstAttribute="width" constant="270" id="1KV-SM-iHv"/>
                                     <constraint firstAttribute="height" constant="39" id="dfv-a8-JQw"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Guess a Letter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,7 +106,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyI-wt-kcR">
                                         <rect key="frame" x="8" y="8" width="552" height="160"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -205,11 +203,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="u6W-P4-3qm">
-                    <connections>
-                        <action selector="guessALetterVC:" destination="vXZ-lx-hvc" id="c7k-ya-aMX"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
         </scene>
         <!--GuessA Letter View Controller-->
@@ -240,7 +233,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick a letter" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfm-Nl-FnJ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Click here to guess a letter" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfm-Nl-FnJ">
                                 <rect key="frame" x="16" y="197" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -255,7 +248,7 @@
                                     <constraint firstAttribute="width" constant="228" id="L9A-9f-i6X"/>
                                     <constraint firstAttribute="height" constant="47" id="grd-oI-BMy"/>
                                 </constraints>
-                                <state key="normal" title="Guess Letter or Go Back">
+                                <state key="normal" title="Submit Letter or Go Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

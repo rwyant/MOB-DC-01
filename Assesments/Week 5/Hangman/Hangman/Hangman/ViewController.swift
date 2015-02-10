@@ -40,9 +40,9 @@ class ViewController: UIViewController, UITextFieldDelegate, PassLetter {
     @IBAction func guessALetterVC2(sender: AnyObject) {
         guessALetterVCFunc()
     }
-    @IBAction func guessALetterVC(sender: AnyObject) {
-        guessALetterVCFunc()
-    }
+//    @IBAction func guessALetterVC(sender: AnyObject) {
+//        guessALetterVCFunc()
+//    }
     func guessALetterVCFunc() {
         var guessALetterVC = self.storyboard?.instantiateViewControllerWithIdentifier("guessALetterVC") as GuessALetterViewController
         guessALetterVC.delegate = self
