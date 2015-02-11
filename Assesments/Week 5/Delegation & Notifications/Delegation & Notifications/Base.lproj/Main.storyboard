@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Array-->
+        <!--<3-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Delegation___Notifications" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,8 +42,8 @@
                             <constraint firstItem="MPf-IK-EQF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="qEW-sa-Vu3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Array" id="HYP-O2-FS4">
-                        <barButtonItem key="rightBarButtonItem" title="Dictionary" id="2mT-xY-M6w">
+                    <navigationItem key="navigationItem" title="&lt;3" id="HYP-O2-FS4">
+                        <barButtonItem key="rightBarButtonItem" title="Tasks" id="2mT-xY-M6w">
                             <connections>
                                 <segue destination="vKP-uw-IhN" kind="show" id="p84-lE-OFv"/>
                             </connections>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1100" y="302"/>
         </scene>
-        <!--Dictionary-->
+        <!--List of Missions-->
         <scene sceneID="T4x-WQ-Epi">
             <objects>
-                <viewController title="Dictionary" id="vKP-uw-IhN" customClass="MapViewController" customModule="Delegation___Notifications" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="List of Missions" id="vKP-uw-IhN" customClass="MapViewController" customModule="Delegation___Notifications" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SkB-WR-UnS"/>
                         <viewControllerLayoutGuide type="bottom" id="oco-i7-P2H"/>

@@ -13,7 +13,7 @@ class MapViewController: UIViewController, UITextFieldDelegate, UITableViewDeleg
     @IBOutlet weak var textToAddToDictionaryValue: UITextField!
     @IBOutlet weak var tableViewToDisplayDictionary: UITableView!
     
-    var dictionaryOfStrings: [String: String] = ["Swift":"Capable of moving with great speed.","Storyboard":"Sketches that depict actions."]
+    var dictionaryOfStrings: [String: String] = ["Mission 1":"Opens at 11am.","Mission 2":"Opens at 1pm.","Mission 3":"Opens at 3pm","Mission 4":"Opens at 5pm","Mission 5":"Opens at 9pm", "Bonus":"Opens with password"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

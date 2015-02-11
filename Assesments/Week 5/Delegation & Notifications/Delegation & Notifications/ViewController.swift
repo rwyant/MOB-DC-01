@@ -26,6 +26,7 @@ class ViewController: UIViewController,UITextFieldDelegate, UITableViewDataSourc
         addTextToArrayOfStrings()
         return true
     }
+    
     func addTextToArrayOfStrings(){
         arrayOfStrings.append(textBoxToAddToArray.text)
         self.tableViewToDisplayArray.reloadData()
