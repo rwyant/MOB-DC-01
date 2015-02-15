@@ -43,7 +43,7 @@ import UIKit
         backgroundColor = UIColor.clearColor()
         
         setupLabels()
-        self.insertSubview(thumbView, atIndex: 0)
+        self.insertSubview(self.thumbView, atIndex: 0)
     }
     
     func setupLabels() {
