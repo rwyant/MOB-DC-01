@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style>
+    p,div {margin:0;padding:0}
+    img {max-width:100%;}
+    body {font-family:Arial, Helvetica, sans-serif;margin:0 auto;padding:16px;max-width:1200px;}
+    #titlearea {border-bottom:1px solid #ccc;font-size:17px;padding:10px}
+    #contentarea {font-size:15px;margin:16px 0}
+    .cell {outline:none;min-height:20px;word-wrap:break-word;margin:5px 0;padding:5px 10px;line-height:1.4}
+    code {font-size:13px}
+  </style>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true,
+        processClass: 'latex-cell'
+      },
+      "HTML-CSS": {
+        preferredFont: "STIX"
+      }
+    };
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/docco.min.css">
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="tex2jax_ignore">
+  <div id="titlearea">
+    <div id="title">Assessment: due Thursday, February 19</div>
+  </div>
+  <div id="contentarea"><div class='cell text-cell'><h3>Hangman game</h3></div><div class='cell text-cell'>Create a <b>Hangman</b> game that lets the user take up to <b>7 wrong guesses</b> on a word (each one representing head, each arm, body, each leg).<div><br></div><div>Game requirements:</div><div>1. You must have at least two scenes/view controllers.</div><div><br></div><div>2. One of the scenes represents your game dashboard, where the user is informed of how many guesses they have left, a graphical representation of wrong guesses, and letters they have guessed correctly.</div><div><br></div><div>3. The user must guess letters in a new scene, and pass the guess back to the main scene through delegation (every time the user takes a guess, they select the “Guess” button from the first/main scene, that takes them to that second scene).&nbsp;The second scene should have at least a text field and button that lets the user take the guess and select the button once they have made their letter guess.</div><div><i>Recommendation: pass wrong guesses to a <b>wrongGuesses</b> array.</i> </div><div><br></div><div><i>Hint: optional route to check if a string contains another string:</i></div></div><pre class='cell code-cell'><code>// note: using lowercaseString so that all user inputs are not case sensitive
+if myWord.lowercaseString.rangeOfString(&quot;e&quot;) != nil {
+    // Enter code that does something if the word contains the letter
+}</code></pre><div class='cell text-cell'>4. Display the incomplete word with _ replacing the not yet guessed letters. <div><i>Hint: add the provided for loop to a function that returns the current guessed word (as string):</i></div></div><pre class='cell code-cell'><code>var correctGuesses = [&quot;e&quot;, &quot;a&quot;]
+var incompleteWord = &quot;&quot;
+
+for letter in myWord {
+    if contains(correctGuesses, String(letter).lowercaseString) {
+        incompleteWord += String(letter)
+        incompleteWord += &quot; &quot;
+    }else {
+        incompleteWord += &quot;_ &quot;
+    }
+}</code></pre><div class='cell text-cell'>5. Programatically draw 7 grey squares. For every wrong guess, color a square red. <div>    <b>Optional: </b>have one square with a different gradient of red. The closer to bright red the color, the closer the user is to running out of lives. If going this route you must provide a legend.</div><div>    <b>Preferred route (bonus):</b> programatically draw the hangman body as the user adds wrong guesses. </div><div><br></div><div>6. Use springs and struts to make sure that the programatically drawn shapes stick to one of the corners. </div><div>    <b>Bonus</b>: lay out all the elements in your scenes with springs and struts. </div><div><br></div><div>7. When the user is out of guesses, present them with a game over message. Listen for a game to be over through a notification. This can either be in the form of two notifications (for <b>gameOverPlayerWin</b> or gameOverOutOfGuesses) or one notification (<b>gameOver</b>) where you calculate the result after.<b> </b></div><div><b><br></b></div><div><b>It is recommended that you build the game rules in a hangman/game class.</b></div></div></div>
+</body>
+</html>
