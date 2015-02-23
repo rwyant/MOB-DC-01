@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- common.css -->
+  <style>body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:16px;color:#333;word-wrap:break-word}img{max-width:100%!important}code{margin:0;padding:.2em 0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}code:after,code:before{letter-spacing:-.2em;content:"\00a0"}pre{margin:0}pre>code{margin:0;padding:0;font-size:100%;word-break:normal;background:0 0;border:0}blockquote{margin:0;padding:0 15px;color:#777;border-left:4px solid #ddd}hr{background-color:#ddd;border:0;height:1px;margin:15px 0}ol{list-style-type:decimal}ol ol,ul ol{list-style-type:lower-latin}ol ol ol,ol ul ol,ul ol ol,ul ul ol{list-style-type:lower-roman}table{border-spacing:0;border-collapse:collapse;margin-top:0;margin-bottom:16px}table th{font-weight:700}table td,table th{padding:6px 13px;border:1px solid #ddd}table tr{background-color:#fff;border-top:1px solid #ccc}table tr:nth-child(even){background-color:#f8f8f8}input[type=checkbox]{cursor:default;margin-right:.5em}.task-list-item{list-style-type:none}.task-list-item+.task-list-item{margin-top:3px}.task-list-item input{float:left;margin:.3em 1em .25em -1.6em;vertical-align:middle}</style>
+  <!-- exported.css -->
+  <style>
+    #nav{margin:5px 10px 10px;font-size:15px}
+    #titlearea{border-bottom:1px solid #ccc;font-size:17px;padding:10px}
+    #contentarea{font-size:15px;margin:16px 0}
+    .cell{outline:0;min-height:20px;margin:5px 0;padding:5px 10px;line-height:1.4}
+    .text-cell{white-space:pre-wrap;}
+    .code-cell{font-size:13px}
+    .latex-cell{white-space:pre-wrap;}
+  </style>
+  <!-- User CSS -->
+  <style> .text-cell {font-size: 14px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 14px;}.latex-cell {font-size: 14px;}</style>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true,
+        processClass: 'latex-cell'
+      },
+      "HTML-CSS": {
+        preferredFont: "STIX"
+      }
+    };
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/docco.min.css">
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="tex2jax_ignore">
+  
+  <div id="titlearea">
+    <h2>Persistence & Dictionaries cheat sheet</h2>
+  </div>
+  <div id="contentarea"><div class='cell text-cell'><b>Dictionaries</b></div><pre class='cell code-cell'><code>// Creating a dictionary with data (key is a string type and value is an int type in this example)
+var ages = [&quot;tedi&quot;: 21] // type is [String: Int]
+
+// Creating an empty dictionary 
+var ages: [String: Int] = [:]
+
+// Accessing dictionary data
+let tediAge = ages[&quot;tedi&quot;] // returns an optional with 21
+
+// Unwrap optional value
+if let tediAge = ages[&quot;tedi&quot;] {
+    println(tediAge)
+}
+
+// Remove dictionary key/value
+ages[&quot;tedi&quot;] = nil
+ages.removeValueForKey(&quot;tedi&quot;)
+
+// Iterating over dictionary
+for (name, age) in ages {
+    println(name + &quot; is \(age)&quot;)
+}
+
+// You can also iterate through keys/values seperately
+for age in ages.values {
+  println(ages)
+}
+
+// BONUS material: array of dictionaries
+var ages: [[String: Int]] = []
+ages.append([&quot;tedi&quot;: 21])
+
+// Alternate method to create empty array of dictionaries
+var myNewDictArray: [Dictionary&lt;String, Int&gt;] = []</code></pre><div class='cell text-cell'><b>Getting NSUserDefaults</b></div><pre class='cell code-cell'><code>// Alternative is to always call NSUserDefaults.standardUserDefaults() everytime we interact with it. Setting it to a defaults constant, makes it easier for us to type out
+let defaults = NSUserDefaults.standardUserDefaults()
+
+// Get test number from user defaults and cast it (use it) as a float
+var testNum = defaults.objectForKey(&quot;test_number&quot;) as Float
+
+// Get array: have to type cast twice to get array because it needs to be first typecasted to NSArray
+var testArray = defaults.objectForKey(&quot;test_array&quot;) as NSArray as Array
+
+// Check if a default is set: this is a good example for setting something the first time the application runs
+var opt: AnyObject? = defaults.objectForKey(&quot;opt&quot;)
+if opt == nil {
+    println(&quot;IT&#39;S NIL!!&quot;)
+  } else {
+    println(&quot;Not nil!!&quot;)
+}</code></pre><div class='cell text-cell'><b>Setting NSUserDefaults</b></div><pre class='cell code-cell'><code>// Store string in user defaults
+NSUserDefaults.standardUserDefaults().setObject(&quot;sample string in user defaults&quot;, forKey: &quot;sample&quot;)
+
+// Store integer in user defaults
+NSUserDefaults.standardUserDefaults().setInteger(1337, forKey: &quot;leet_number&quot;)
+
+// Store array in user defaults
+var testArray: Array = [&quot;test&quot;, &quot;again&quot;, &quot;and again&quot;]
+NSUserDefaults.standardUserDefaults().setObject(testArray, forKey: &quot;test_array&quot;)
+
+// Use synchronize to save newly created user defaults
+NSUserDefaults.standardUserDefaults().synchronize()</code></pre><div class='cell text-cell'><b>Reading from plist</b></div><pre class='cell code-cell'><code>// Read plist that is an array at the root
+// Books is the name of our plist
+var booksPath = NSBundle.mainBundle().pathForResource(&quot;Books&quot;, ofType: &quot;plist&quot;)
+var books = NSArray(contentsOfFile: booksPath!)</code></pre><div class='cell text-cell'><b>Write to plist</b></div><pre class='cell code-cell'><code>// When you need to write to plist we need to set it as NSMutableArray or NSMutableDictionary
+var myArray: NSMutableArray?
+
+// Write to plist only if path exists, so first step is to get the path
+// Books is the name of our plist
+if let path = NSBundle.mainBundle().pathForResource(&quot;Books&quot;, ofType: &quot;plist&quot;) {
+    myArray = NSMutableArray(contentsOfFile: path)
+    //We can now set/update values. forKey is the key that we want to store the value as
+    myArray?.setValue(&quot;1995&quot;, forKey: &quot;Published&quot;)
+    
+    // When processes get interrupted/application crashes while saving to a file, it can cause the file to corrupt. The atomically option allows for a temporary file to be created while saving.
+    myDict?.writeToFile(path, atomically: false)
+}</code></pre><div class='cell text-cell'><b>Reading files</b></div><pre class='cell code-cell'><code>// First we need the path. NSTEmporaryDirectory references the temp directory in our app bundle. Myfile is the file that we are referencing.
+let path = NSTemporaryDirectory() + &quot;MyFile.txt&quot;
+
+// We are using NSArray because we are assuming that we stored the info in our file as an array
+let readArray:NSArray? = NSArray(contentsOfFile: path)
+
+if let array = readArray{
+   println(&quot;Could read the array back = \(array)&quot;)
+}</code></pre><div class='cell text-cell'><b>Writing to files</b></div><pre class='cell code-cell'><code>// Again set path - file will be created if it doesn&#39;t exist
+let path = NSTemporaryDirectory() + &quot;MyFile.txt&quot;
+let arrayOfNames:NSArray = [&quot;Steve&quot;, &quot;John&quot;, &quot;Edward&quot;]
+
+// writeFileToPath is the method we call on our data
+arrayOfNames.writeToFile(path, atomically: true)</code></pre><div class='cell text-cell'><b>BONUS: reference caches folder</b></div><pre class='cell code-cell'><code>let fileManager = NSFileManager()
+
+let urls = fileManager.URLsForDirectory(
+    NSSearchPathDirectory.CachesDirectory,
+    inDomains: NSSearchPathDomainMask.UserDomainMask) as [NSURL]
+
+if urls.count &gt; 0{
+    var documentsFolder = urls[0]
+    println(&quot;\(documentsFolder)&quot;)
+} else {
+    println(&quot;Could not find the Documents folder&quot;)
+}</code></pre><div class='cell text-cell'><b>BONUS: reference documents folder</b></div><pre class='cell code-cell'><code>let fileManager = NSFileManager()
+let urls = fileManager.URLsForDirectory(
+    NSSearchPathDirectory.DocumentDirectory, 
+    inDomains: NSSearchPathDomainMask.UserDomainMask) as [NSURL]
+
+if urls.count &gt; 0{
+    let documentsFolder = urls[0]
+    println(&quot;\(documentsFolder)&quot;)
+} else {
+    println(&quot;Could not find the Documents folder&quot;)
+}</code></pre><div class='cell text-cell'><b>To create directories and work with error handling, reference pg. 98 of the “MOB GitBook DC.pdf” file in our resources folder in the MOB DC repository. </b></div></div>
+</body>
+</html>
