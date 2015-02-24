@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Mike Tomlin</string>
+		<key>Position</key>
+		<string>Head Coach</string>
+		<key>Years of Experience</key>
+		<integer>14</integer>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Dick LeBeau</string>
+		<key>Position</key>
+		<string>Defensive Coordinator</string>
+		<key>Years of Experience</key>
+		<integer>54</integer>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Todd Haley</string>
+		<key>Position</key>
+		<string>Offensive Coordinator</string>
+		<key>Years of Experience</key>
+		<integer>18</integer>
+	</dict>
+</array>
+</plist>
