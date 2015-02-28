@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cb5-j1-aH8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cku-Hi-eyz">
+            <objects>
+                <navigationController id="Cb5-j1-aH8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2GO-zE-THw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Zj1-AC-kIa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COv-E5-Rpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="-442"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="FirstViewController" customModule="Lesson07" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TODO one: Make this text view print the values of test_string and test_number, stored in NSUserDefaults" translatesAutoresizingMaskIntoConstraints="NO" id="f0Q-F0-v0f">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="f0Q-F0-v0f" secondAttribute="bottom" id="2Zd-9Z-cf8"/>
+                            <constraint firstItem="f0Q-F0-v0f" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="4xH-6t-Eyw"/>
+                            <constraint firstItem="f0Q-F0-v0f" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Eg1-hx-CPk"/>
+                            <constraint firstAttribute="centerX" secondItem="f0Q-F0-v0f" secondAttribute="centerX" id="NrF-CX-uk6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="f0Q-F0-v0f" secondAttribute="bottom" id="O4D-Fd-QFe"/>
+                            <constraint firstItem="f0Q-F0-v0f" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RpM-Qb-KOQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f0Q-F0-v0f" secondAttribute="trailing" id="cVM-bE-HCb"/>
+                            <constraint firstAttribute="centerY" secondItem="f0Q-F0-v0f" secondAttribute="centerY" id="dyd-eo-1tW"/>
+                            <constraint firstItem="f0Q-F0-v0f" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ehT-kj-wsJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Eg1-hx-CPk"/>
+                                <exclude reference="NrF-CX-uk6"/>
+                                <exclude reference="cVM-bE-HCb"/>
+                                <exclude reference="dyd-eo-1tW"/>
+                                <exclude reference="O4D-Fd-QFe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="puK-bQ-bBK">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="hS2-GZ-L7q">
+                            <connections>
+                                <segue destination="0YQ-jj-Cgs" kind="show" id="hRZ-Rp-kK1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1315" y="-442"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="ZHi-xz-gPd">
+            <objects>
+                <viewController id="0YQ-jj-Cgs" customClass="SecondViewController" customModule="Lesson07" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P2f-zQ-b9f"/>
+                        <viewControllerLayoutGuide type="bottom" id="GJ6-Uw-HyL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T5y-Ju-Aau">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TODO two: Make this text view print the values of the string and slider value stored in the settings bundle of the app." translatesAutoresizingMaskIntoConstraints="NO" id="STF-CW-inV">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="STF-CW-inV" secondAttribute="trailing" id="Yox-7U-Adz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="STF-CW-inV" secondAttribute="bottom" id="dA5-Qy-2wp"/>
+                            <constraint firstItem="STF-CW-inV" firstAttribute="leading" secondItem="T5y-Ju-Aau" secondAttribute="leadingMargin" id="f24-5L-utT"/>
+                            <constraint firstItem="STF-CW-inV" firstAttribute="top" secondItem="T5y-Ju-Aau" secondAttribute="topMargin" id="mNI-yJ-rUF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XXi-gI-j27">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="snt-4M-qZK">
+                            <connections>
+                                <segue destination="lWA-Qe-LpN" kind="show" id="Rpo-z5-jzT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vO4-kS-iSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="-442"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="c41-hS-gzB">
+            <objects>
+                <viewController id="lWA-Qe-LpN" customClass="ThirdViewController" customModule="Lesson07" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pqq-dz-Wdp"/>
+                        <viewControllerLayoutGuide type="bottom" id="rnR-sF-Djc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VXK-EB-7Kt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TODO three: Save the text in this text box to a flat file when 'next' is pressed." translatesAutoresizingMaskIntoConstraints="NO" id="zba-PB-Qsj">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zba-PB-Qsj" firstAttribute="trailing" secondItem="VXK-EB-7Kt" secondAttribute="trailingMargin" id="Phv-Ls-lAQ"/>
+                            <constraint firstItem="zba-PB-Qsj" firstAttribute="top" secondItem="VXK-EB-7Kt" secondAttribute="topMargin" id="jDh-5e-MJk"/>
+                            <constraint firstItem="rnR-sF-Djc" firstAttribute="top" secondItem="zba-PB-Qsj" secondAttribute="bottom" id="jJm-Xn-MZ0"/>
+                            <constraint firstItem="zba-PB-Qsj" firstAttribute="leading" secondItem="VXK-EB-7Kt" secondAttribute="leadingMargin" id="jul-sE-bbV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="W4c-fq-GLh">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="BAS-oR-Hjw">
+                            <connections>
+                                <segue destination="03b-O5-o7r" kind="show" id="oNc-T8-vY0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JI4-wm-MiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="-442"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="KB7-To-Nzj">
+            <objects>
+                <viewController id="03b-O5-o7r" customClass="FourthViewController" customModule="Lesson07" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="01n-0A-BQQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="BYa-bw-pqo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e0P-C7-EZS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TODO four: Read the file saved in the previous TODO, and make this text box print out the text of that file." translatesAutoresizingMaskIntoConstraints="NO" id="sLH-y3-8UM">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BYa-bw-pqo" firstAttribute="top" secondItem="sLH-y3-8UM" secondAttribute="bottom" id="2jN-3e-5px"/>
+                            <constraint firstItem="sLH-y3-8UM" firstAttribute="leading" secondItem="e0P-C7-EZS" secondAttribute="leadingMargin" id="YvE-eF-ac2"/>
+                            <constraint firstItem="sLH-y3-8UM" firstAttribute="trailing" secondItem="e0P-C7-EZS" secondAttribute="trailingMargin" id="nuY-aA-o7W"/>
+                            <constraint firstItem="sLH-y3-8UM" firstAttribute="top" secondItem="e0P-C7-EZS" secondAttribute="topMargin" id="zQy-qI-BPv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2d0-E9-8FN">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="JPY-mR-vzn">
+                            <connections>
+                                <segue destination="ZvF-or-Q6s" kind="show" id="tmJ-2M-CqU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdY-tK-zGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3400" y="-442"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="mT0-C7-Fua">
+            <objects>
+                <viewController id="mbK-IF-1aJ" customClass="SixthViewController" customModule="Lesson07" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eJQ-Mr-c0k"/>
+                        <viewControllerLayoutGuide type="bottom" id="e66-bG-ZBU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rdu-Uy-gJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TODO six: Read the array saved in the previous file and print its space-delimited string representation here." translatesAutoresizingMaskIntoConstraints="NO" id="qPA-4h-ilE">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qPA-4h-ilE" firstAttribute="leading" secondItem="Rdu-Uy-gJ9" secondAttribute="leadingMargin" id="2ln-BT-GhM"/>
+                            <constraint firstItem="qPA-4h-ilE" firstAttribute="top" secondItem="Rdu-Uy-gJ9" secondAttribute="topMargin" id="BQS-Fp-S7q"/>
+                            <constraint firstItem="qPA-4h-ilE" firstAttribute="trailing" secondItem="Rdu-Uy-gJ9" secondAttribute="trailingMargin" id="k5o-Gl-T99"/>
+                            <constraint firstItem="e66-bG-ZBU" firstAttribute="top" secondItem="qPA-4h-ilE" secondAttribute="bottom" id="wFw-wb-w01"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oU3-RH-uDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4816" y="-442"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="vhN-8O-ffV">
+            <objects>
+                <viewController id="ZvF-or-Q6s" customClass="FifthViewController" customModule="Lesson07" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fhO-lW-9aV"/>
+                        <viewControllerLayoutGuide type="bottom" id="zK6-eo-u0G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0yb-HF-0ZL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBD-AK-qjV">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">TODO Five: Strings can be entered into this text box in a space-delimited fashion. They represent an array of strings. E.g. the entry "a b c" corresponds to array ["a", "b", "c"]. Save the array of strings that corresponds to the text in this text box to a file.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zK6-eo-u0G" firstAttribute="top" secondItem="nBD-AK-qjV" secondAttribute="bottom" id="0zj-su-Nni"/>
+                            <constraint firstItem="nBD-AK-qjV" firstAttribute="leading" secondItem="0yb-HF-0ZL" secondAttribute="leadingMargin" id="IhN-YA-JIO"/>
+                            <constraint firstItem="nBD-AK-qjV" firstAttribute="top" secondItem="0yb-HF-0ZL" secondAttribute="topMargin" id="ZiI-7T-YZ6"/>
+                            <constraint firstItem="nBD-AK-qjV" firstAttribute="trailing" secondItem="0yb-HF-0ZL" secondAttribute="trailingMargin" id="to1-OL-J0D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XAI-xr-9Z9">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="ezv-go-RsM">
+                            <connections>
+                                <segue destination="mbK-IF-1aJ" kind="show" id="yHd-vX-Zt1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsy-el-VFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4100" y="-442"/>
+        </scene>
+    </scenes>
+</document>
