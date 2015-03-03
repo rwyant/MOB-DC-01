@@ -9,6 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    /*
+    --
+    FEEDBACK
+    Looks great, love the additional feautres
+    Only suggestion here is that you could split your view controller a little more up into models
+    But I'm also sure you'd do a way better job now, this was done a while ago
+    --
+    */
+    
     @IBOutlet weak var felt: UIImageView!
     @IBOutlet weak var table: UIView!
     @IBOutlet weak var playAgain: UIView!
