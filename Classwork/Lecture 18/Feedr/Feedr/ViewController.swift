@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
-    var tempData = ["Ena's tail is apperantly OK", "MOB Class is awesome", "Pigs sighted flying"]
+    var tempData = ["Girl gets stood up by bootycall", "I get cranky when I'm tired", "In this chat you have a 50% chance of getting robbed 🙈"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     
     //on click
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var url = NSURL(string: "http://tedi.io")
+        var url = NSURL(string: "https://prod.getyapper.com/yapper/app/landing.html#/livefeed")
         performSegueWithIdentifier("web", sender: NSURLRequest(URL: url!))
     }
     
