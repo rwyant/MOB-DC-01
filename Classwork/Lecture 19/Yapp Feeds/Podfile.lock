@@ -1,0 +1,19 @@
+PODS:
+  - SWXMLHash (0.6.4)
+
+DEPENDENCIES:
+  - SWXMLHash (from `https://github.com/drmohundro/SWXMLHash.git`)
+
+EXTERNAL SOURCES:
+  SWXMLHash:
+    :git: https://github.com/drmohundro/SWXMLHash.git
+
+CHECKOUT OPTIONS:
+  SWXMLHash:
+    :commit: 1d6c962bff39f7f721335247354ca62270a39ae7
+    :git: https://github.com/drmohundro/SWXMLHash.git
+
+SPEC CHECKSUMS:
+  SWXMLHash: 124239a54d4bcc4cf9617326932926204d653757
+
+COCOAPODS: 0.36.0.rc.1

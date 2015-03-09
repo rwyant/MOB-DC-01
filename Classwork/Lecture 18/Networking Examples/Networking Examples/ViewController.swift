@@ -13,10 +13,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = NSURL(string: "http://asdfoafdofadsfdsa.com")
+        let url = NSURL(string: "https://prod.getyapper.com/yapper/v1/open/yapp/portal/getAll/")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
             var stringData = NSString(data: data, encoding: NSUTF8StringEncoding)
+            
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 if error != nil {
                     self.textView.text = "There was an error reaching the domain."

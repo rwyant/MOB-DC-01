@@ -1,0 +1,10 @@
+PODS:
+  - SWXMLHash (0.6.4)
+
+DEPENDENCIES:
+  - SWXMLHash (~> 0.6.0)
+
+SPEC CHECKSUMS:
+  SWXMLHash: c8dbf7f7f00e33e042ef7bc8859f9c4a2f4421d2
+
+COCOAPODS: 0.36.0.rc.1

@@ -46,7 +46,7 @@ git clone [URL] = creates a clone of that repository on your hard drive wherever
 cp -r folder1/hello.text folder2/. = copy files (recursively) from one repo (or folder) to another. The "." makes it so that you copy with the same file name.
 cp -r folder1/* folder2/. = copy all files in folder1 (with the same name) to folder2
 mv [file name] folder1/. = moves 'readme.txt' into folder1, keeping naming structure as it is 
-mv newfolder/ folder1/. = moves 'newfolder' folder into folder1, keeping the same name
+mv newfolder/ folder1/. = moves 'newfolder' folder into folder1, keeping the same name*/
 
-
+pod install - installs any pods you added to XCode via Podlist. Once installed, open project up, clean it, and build it before importing the CocoaPod.
 
