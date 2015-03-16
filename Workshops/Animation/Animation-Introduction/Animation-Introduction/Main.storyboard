@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cp6-tN-xgE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Layers-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation_Intro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFd-7p-DUB">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Arc" id="Jsm-0v-OOc">
+                                        <connections>
+                                            <action selector="createArc:" destination="BYZ-38-t0r" id="5bX-gf-4K2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mMl-br-mnE"/>
+                                    <barButtonItem title="Oval" id="uVR-Fc-Adf">
+                                        <connections>
+                                            <action selector="createOval:" destination="BYZ-38-t0r" id="aip-UW-00m"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dXA-As-uBU"/>
+                                    <barButtonItem title="Triangle" id="9Vy-Yl-LT6">
+                                        <connections>
+                                            <action selector="createTriangle:" destination="BYZ-38-t0r" id="4s3-g9-NeY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YyM-hi-JvN"/>
+                                    <barButtonItem title="Gradient" id="dc3-5r-sdJ">
+                                        <connections>
+                                            <action selector="createGradient:" destination="BYZ-38-t0r" id="9iL-4o-BsK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dFd-7p-DUB" secondAttribute="trailing" id="NLH-pB-7fK"/>
+                            <constraint firstItem="dFd-7p-DUB" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="fUz-0t-lmw"/>
+                            <constraint firstItem="dFd-7p-DUB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="t6H-0O-pWA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Layers" id="zgY-po-c9L">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="NTa-W7-5dn">
+                            <connections>
+                                <action selector="deleteAllLayers:" destination="BYZ-38-t0r" id="MjV-xa-tCe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057" y="564"/>
+        </scene>
+        <!--Layers-->
+        <scene sceneID="Aa2-OU-a3F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9XK-kH-EQu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Layers" id="CBE-rY-5N8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OEr-Hc-Guf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dub-bk-HRN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s65-kl-reb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347" y="564"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9uy-HP-WFX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cp6-tN-xgE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="MhK-IR-aOs">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9XK-kH-EQu" kind="relationship" relationship="viewControllers" id="ary-IF-QSt"/>
+                        <segue destination="Ukj-RJ-lhd" kind="relationship" relationship="viewControllers" id="Cir-vM-4c6"/>
+                        <segue destination="t6T-my-dLs" kind="relationship" relationship="viewControllers" id="HSt-is-kUg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uC6-fL-TPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="1108"/>
+        </scene>
+        <!--Animation-->
+        <scene sceneID="0eN-X9-uYl">
+            <objects>
+                <viewController id="qtL-Ay-UgW" customClass="AnimationViewController" customModule="Animation_Intro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="04Q-sS-kX7"/>
+                        <viewControllerLayoutGuide type="bottom" id="zrJ-Yw-zCt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DFn-dz-pSs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiv-Mn-BJa">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Core animation" id="msi-jM-GhW">
+                                        <connections>
+                                            <action selector="coreAnimation:" destination="qtL-Ay-UgW" id="TuZ-zF-HdN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nar-y1-Vgz"/>
+                                    <barButtonItem title="Facebook Pop" id="WCw-JQ-vPM">
+                                        <connections>
+                                            <action selector="facebookPop:" destination="qtL-Ay-UgW" id="FXe-cB-oe7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kiv-Mn-BJa" firstAttribute="bottom" secondItem="zrJ-Yw-zCt" secondAttribute="top" id="3FU-Gi-Ev6"/>
+                            <constraint firstItem="kiv-Mn-BJa" firstAttribute="leading" secondItem="DFn-dz-pSs" secondAttribute="leading" id="LVd-r4-Hp6"/>
+                            <constraint firstAttribute="trailing" secondItem="kiv-Mn-BJa" secondAttribute="trailing" id="yjo-kQ-Ues"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animation" id="cF2-Pj-snm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AiH-A4-qeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159" y="1325"/>
+        </scene>
+        <!--Animation-->
+        <scene sceneID="bjh-Qi-Cty">
+            <objects>
+                <navigationController title="Animation" automaticallyAdjustsScrollViewInsets="NO" id="Ukj-RJ-lhd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Animation" id="6IH-ac-dUR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l8S-F1-cNC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qtL-Ay-UgW" kind="relationship" relationship="rootViewController" id="ppT-4A-Rd9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Qd-I5-XKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347" y="1325"/>
+        </scene>
+        <!--Transform View Controller-->
+        <scene sceneID="xIt-N1-0oj">
+            <objects>
+                <viewController id="HFB-dJ-Vlt" customClass="TransformViewController" customModule="Animation_Intro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mFc-cg-hFM"/>
+                        <viewControllerLayoutGuide type="bottom" id="4tf-2c-itB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ts-BO-teP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qja-5w-RyW">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Rotation" id="iyx-en-N0M">
+                                        <connections>
+                                            <action selector="rotate:" destination="HFB-dJ-Vlt" id="H2B-gu-Djq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YzS-oD-hTb"/>
+                                    <barButtonItem title="Scale" id="bI4-Vx-5U3">
+                                        <connections>
+                                            <action selector="scale:" destination="HFB-dJ-Vlt" id="SfC-Db-evd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hi6-xV-oT1"/>
+                                    <barButtonItem title="Combination" id="914-pE-Kaq">
+                                        <connections>
+                                            <action selector="combination:" destination="HFB-dJ-Vlt" id="kI3-cz-eiz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qja-5w-RyW" firstAttribute="leading" secondItem="7ts-BO-teP" secondAttribute="leading" id="C14-md-n7w"/>
+                            <constraint firstAttribute="trailing" secondItem="Qja-5w-RyW" secondAttribute="trailing" id="F4W-km-5jy"/>
+                            <constraint firstItem="Qja-5w-RyW" firstAttribute="bottom" secondItem="4tf-2c-itB" secondAttribute="top" id="kTL-7P-4j0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pee-LV-SGu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbm-Hm-2qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159" y="2076"/>
+        </scene>
+        <!--Transform-->
+        <scene sceneID="3zZ-eH-Mx2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t6T-my-dLs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Transform" id="jII-8c-SAc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DZt-X5-p3K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HFB-dJ-Vlt" kind="relationship" relationship="rootViewController" id="wWZ-kc-zwI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="954-kP-hR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347" y="2076"/>
+        </scene>
+    </scenes>
+</document>
