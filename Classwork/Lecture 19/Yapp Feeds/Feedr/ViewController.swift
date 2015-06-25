@@ -18,7 +18,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        if let url = NSURL(string: "http://staging.getyapper.com/yapper/v1/open/yapp/admin/getAll/") {
+        if let url = NSURL(string: "https://staging.getyapper.com/yapper/v1/open/user/login/fb/?fbid=10206971") {
             let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
 
                 var newXML = SWXMLHash.parse(data)

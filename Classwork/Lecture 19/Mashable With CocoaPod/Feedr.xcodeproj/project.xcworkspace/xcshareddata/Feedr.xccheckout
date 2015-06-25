@@ -16,7 +16,7 @@
 		<string>https://github.com/rwyant/blackjack.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Classwork/Lecture 19/Mashable/Feedr.xcodeproj</string>
+	<string>Classwork/Lecture 19/Mashable With CocoaPod/Feedr.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>

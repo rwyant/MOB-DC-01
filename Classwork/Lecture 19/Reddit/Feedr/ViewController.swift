@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
     var tempData = ["Ena's tail is apperantly OK", "MOB Class is awesome", "Pigs sighted flying"]
-        var url: NSURL?
+    var url: NSURL?
     
     var json: NSDictionary?
     
@@ -50,7 +50,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell!
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell!
         if cell == nil  {
             cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
         }
@@ -61,7 +61,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
                     if let child = children[indexPath.row] as? NSDictionary {
                         if let childData = child["data"] as? NSDictionary {
                             if let title = childData["title"] as? NSString {
-                                cell.textLabel?.text = title
+                                cell.textLabel?.text = title as String
                             }
                         }
                     }
@@ -75,14 +75,14 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     
     //on click
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.url = NSURL(string: "http://reddit.com")
+        self.url = NSURL(string: "http://www.reddit.com/.json")
         if let jsonDict = self.json {
             if let data = jsonDict["data"] as? NSDictionary {
                 if let children = data["children"] as? NSArray {
                     if let child = children[indexPath.row] as? NSDictionary {
                         if let childData = child["data"] as? NSDictionary {
                             if let urlOfChild = childData["permalink"] as? NSString {
-                                self.url = NSURL(string: "http://reddit.com" + urlOfChild)
+                                self.url = NSURL(string: "http://reddit.com" + (urlOfChild as String))
                                 performSegueWithIdentifier("web", sender: NSURLRequest(URL: url!))
                             }
                         }
@@ -94,7 +94,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let request = sender as? NSURLRequest {
-            var destinationViewController = segue.destinationViewController as WebViewController
+            var destinationViewController = segue.destinationViewController as! WebViewController
             destinationViewController.request = request
         }
     }

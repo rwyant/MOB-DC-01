@@ -50,3 +50,27 @@ mv newfolder/ folder1/. = moves 'newfolder' folder into folder1, keeping the sam
 
 pod install - installs any pods you added to XCode via Podlist. Once installed, open project up, clean it, and build it before importing the CocoaPod.
 
+
+Cool Code for iOS Apps: 
+//Notifications
+    func displayAlert(#title: String, message: String, buttonText: String) {
+        let alert = UIAlertView()
+        alert.title = title
+        alert.message = message
+        // We can add other buttons
+        alert.addButtonWithTitle(buttonText)
+        // We call the show() method once we have all of our alert properties set
+        alert.show()
+    }
+    
+    func donateBitches() {
+        displayAlert(title: "Donation Box", message: "Thank you for your generosity! This feature is currently under construction, but please email us with any feedback or stories from your experience: robyn@surpriseindustries.com", buttonText: "Thanks for your support")
+    }
+
+//Resign Keyboard
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+
+
+

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         displayAlert(title: "Swipe Right", message: "You are about to move View Controllers.", buttonText: "Okay")
         //Two questions: 1) documentation says "UIAlertView" is depreciated... how do we do this using UIAlertViewController? 2) How do you programatically set 'didClickButton" so that the function does not continue until the user selects \(buttonText:"Okay")
         
-        var modalVC = self.storyboard?.instantiateViewControllerWithIdentifier("ModalVC") as ModalViewController
+        var modalVC = self.storyboard?.instantiateViewControllerWithIdentifier("ModalVC") as! ModalViewController
         
         self.presentViewController(modalVC, animated: true, completion: nil)
         

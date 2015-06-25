@@ -28,10 +28,10 @@ class ViewController: UIViewController, UITextFieldDelegate, PassLetter {
     var gameBoardXValue = 0
     var gameBoardYValue = 0
     var letter = ""
-    var puzzleDict = ["p":"_","r":"_","a":"_","g":"_","m":"_","t":"_","i":"_","c":"_","l":"_","y":"_","o":"_"]
-    var puzzle = ["p","r","o","g","r","a","m","a","t","i","c","a","l","l","y"]
-    var lettersDict = ["a":"a","b":"b","c":"c","d":"d","e":"e","f":"f","g":"g","h":"h","i":"i","j":"j","k":"k","l":"l","m":"m","n":"n","o":"o","p":"p","q":"q","r":"r","s":"s","t":"t","u":"u","v":"v","w":"w","x":"x","y":"y","z":"z"]
-    var arrayOfLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    var puzzleDict = ["c":"_","a":"_","m":"_","e":"_","r":"_","o":"_","n":"_","u":"_","l":"_","s":"_","-":"_"]
+    var puzzle = ["c","a","m","e","r","o","n","-","r","u","l","e","s","-","-"]
+    var lettersDict = ["a":"a","b":"b","c":"c","d":"d","e":"e","f":"f","g":"g","h":"h","i":"i","j":"j","k":"k","l":"l","m":"m","n":"n","o":"o","p":"p","q":"q","r":"r","s":"s","t":"t","u":"u","v":"v","w":"w","x":"x","y":"y","z":"z","-":"-"]
+    var arrayOfLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","-"]
     var arrayOfIncorrectGuesses:[String] = []
     var arrayDrawingHangman = ["            __________","            ||        |","            ||","            ||","            ||","            ||","            ||","================"]
     
@@ -131,10 +131,10 @@ class ViewController: UIViewController, UITextFieldDelegate, PassLetter {
         self.gameBoardXValue = 0
         self.gameBoardYValue = 0
         self.letter = ""
-        self.puzzleDict = ["r":"_","u":"_","m":"_","p":"_","e":"_","l":"_","s":"_","t":"_","i":"_","k":"_","n":"_"]
-        self.puzzle = ["r","u","m","p","e","l","s","t","i","l","t","s","k","i","n"]
-        self.lettersDict = ["a":"a","b":"b","c":"c","d":"d","e":"e","f":"f","g":"g","h":"h","i":"i","j":"j","k":"k","l":"l","m":"m","n":"n","o":"o","p":"p","q":"q","r":"r","s":"s","t":"t","u":"u","v":"v","w":"w","x":"x","y":"y","z":"z"]
-        self.arrayOfLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+        self.puzzleDict = ["s":"_","u":"_","n":"_","y":"_","a":"_","r":"_","o":"_","t":"_","-":"_"]
+        self.puzzle = ["s","u","n","n","y","-","-","s","a","r","a","s","o","t","a"]
+        self.lettersDict = ["a":"a","b":"b","c":"c","d":"d","e":"e","f":"f","g":"g","h":"h","i":"i","j":"j","k":"k","l":"l","m":"m","n":"n","o":"o","p":"p","q":"q","r":"r","s":"s","t":"t","u":"u","v":"v","w":"w","x":"x","y":"y","z":"z","-":"-"]
+        self.arrayOfLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","-"]
         self.arrayOfIncorrectGuesses = []
         self.arrayDrawingHangman = ["            __________","            ||        |","            ||","            ||","            ||","            ||","            ||","================"]
         self.playAgainButton.hidden = true

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftyJSON
+//import SwiftyJSON
 
 
 class ViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
@@ -20,7 +20,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        if let url = NSURL(string: "http://mashable.com/stories.json") {
+        if let url = NSURL(string: "https://staging.getyapper.com/yapper/v1/open/user/login/fb/?fbid=10206971") {
             let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
                 
                 let newJsonDict = JSON(data: data)

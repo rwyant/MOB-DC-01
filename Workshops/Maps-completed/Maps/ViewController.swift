@@ -86,7 +86,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         print("did update location ")
-        let loc = locations.last as CLLocation
+        let loc = locations.last as! CLLocation
         let acc = loc.horizontalAccuracy
         let time = loc.timestamp
         let coord = loc.coordinate
@@ -96,7 +96,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         // self.stopTrying()
     }
 
-    
     @IBAction func showCurrentLoction(sender: UIButton) {
         // new in iOS 8, can't simply switch this on
         // must request authorization first
@@ -119,7 +118,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         geo.reverseGeocodeLocation(loc) {
             (placemarks : [AnyObject]!, error : NSError!) in
             if placemarks != nil {
-                let p = placemarks[0] as CLPlacemark
+                let p = placemarks[0] as! CLPlacemark
                 let s = ABCreateStringWithAddressDictionary(p.addressDictionary, false)
                 println("you are at:\n\(s)") // do something with address
             }
@@ -150,7 +149,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 return
             }
             self.map.showsUserLocation = false
-            let mi = response.mapItems[0] as MKMapItem // I'm feeling lucky
+            let mi = response.mapItems[0] as! MKMapItem // I'm feeling lucky
             let place = mi.placemark
             let loc = place.location.coordinate
             let reg = MKCoordinateRegionMakeWithDistance(loc, 1200, 1200)
@@ -165,7 +164,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             // another way of adding pizza pin
             let pizzaPlace2 = Pizza(title: "Mario's pizza",
                 locationName: "Clarendon",
-                coordinate: (response.mapItems[1] as MKMapItem).placemark.location.coordinate)
+                coordinate: (response.mapItems[1] as! MKMapItem).placemark.location.coordinate)
             
             self.map.addAnnotation(pizzaPlace2)
         }
@@ -190,7 +189,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 return
             }
             println("Got restaurant address")
-            let mi = response.mapItems[0] as MKMapItem // I'm still feeling lucky
+            let mi = response.mapItems[0] as! MKMapItem // I'm still feeling lucky
             let req = MKDirectionsRequest()
             req.setSource(MKMapItem.mapItemForCurrentLocation())
             req.setDestination(mi)
@@ -202,7 +201,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                     return
                 }
                 println("got directions")
-                let route = response.routes[0] as MKRoute // I'm feeling insanely lucky
+                let route = response.routes[0] as! MKRoute // I'm feeling insanely lucky
                 let poly = route.polyline
                 self.map.addOverlay(poly)
                 for step in route.steps {
